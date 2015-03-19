@@ -1,0 +1,3 @@
+sch2hdl -intstyle ise -family spartan6 -verilog D_flop_posedge_drc.vf -w {C:/Users/Young/Desktop/Verilog Project/Project12/D_flop_posedge.sch} 
+sch2hdl -intstyle ise -family spartan6 -verilog D_flop_posedge.vf -w {C:/Users/Young/Desktop/Verilog Project/Project12/D_flop_posedge.sch} 
+sch2verilog -intstyle ise -family spartan6 -tionly {} -tiext tfi -w {C:/Users/Young/Desktop/Verilog Project/Project12/D_flop_posedge.sch} D_flop_posedge.tfi 

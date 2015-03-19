@@ -1,0 +1,91 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter xsthdpdir set to ./_cg/_dbg/ROM_B_xsd
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: ./_cg/_dbg/ROM_B.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "./_cg/_dbg/ROM_B.prj"
+Input Format                       : VHDL
+
+---- Target Parameters
+Output Format                      : NGC
+Output File Name                   : "./_cg/_dbg/ROM_B.ngc"
+Target Device                      : xc6slx16-3csg324
+
+---- Source Options
+Work Library                       : work
+Entity Name                        : ROM_B
+Architecture Name                  : spartan6
+Top Module Name                    : ROM_B
+Resource Sharing                   : NO
+
+---- Target Options
+Add IO Buffers                     : NO
+Register Duplication               : NO
+
+---- General Options
+Bus Delimiter                      : <>
+Library Search Order               : "./_cg/_dbg/_default.lso"
+Keep Hierarchy                     : NO
+
+=========================================================================
+
+WARNING:Xst:29 - Optimization Effort not specified
+The following parameters have been added:
+Optimization Goal                  : SPEED
+
+=========================================================================
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Young\Desktop\Verilog Project\COD-P1\ipcore_dir\tmp\_cg\_dbg\dist_mem_gen_v7_2\dist_mem_utils.vhd" into library dist_mem_gen_v7_2
+Parsing package <dist_mem_utils>.
+Parsing package body <dist_mem_utils>.
+Parsing VHDL file "C:\Users\Young\Desktop\Verilog Project\COD-P1\ipcore_dir\tmp\_cg\_dbg\dist_mem_gen_v7_2\dist_mem_comps.vhd" into library dist_mem_gen_v7_2
+Parsing package <dist_mem_comps>.
+Parsing VHDL file "C:\Users\Young\Desktop\Verilog Project\COD-P1\ipcore_dir\tmp\_cg\_dbg\dist_mem_gen_v7_2\rom\rom.vhd" into library dist_mem_gen_v7_2
+Parsing entity <rom>.
+Parsing architecture <rtl> of entity <rom>.
+Parsing VHDL file "C:\Users\Young\Desktop\Verilog Project\COD-P1\ipcore_dir\tmp\_cg\_dbg\dist_mem_gen_v7_2\spram\spram.vhd" into library dist_mem_gen_v7_2
+Parsing entity <spram>.
+Parsing architecture <rtl> of entity <spram>.
+ERROR:HDLCompiler:1135 - "Unknown" Line 0: Cannot open vhdl file C:\Users\Young\Desktop\Verilog Project\COD-P1\ipcore_dir\tmp\_cg\_dbg\dist_mem_gen_v7_2\dpram\dpram.vhd
+--> 
+
+Total memory usage is 157892 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

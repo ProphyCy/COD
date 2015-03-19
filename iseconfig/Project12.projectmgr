@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="Project12" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M10 - Wall_CLOCK</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M11 - shift_reg_32bit</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M12 - register_file_8_32</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M12 - register_file_8_32/reg32_0 - register_32/reg8_2 - register_8bits</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M12 - register_file_8_32/reg32_0 - register_32/reg8_3 - register_8bits</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M12 - register_file_8_32/reg32_0 - register_32/reg8_4 - register_8bits</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M12 - register_file_8_32/reg32_1 - register_32</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M12 - register_file_8_32/reg32_2 - register_32</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M12 - register_file_8_32/reg32_3 - register_32</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M12 - register_file_8_32/reg32_4 - register_32</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M12 - register_file_8_32/reg32_5 - register_32</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M12 - register_file_8_32/reg32_6 - register_32</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M12 - register_file_8_32/reg32_7 - register_32</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M8 - ALU_LCDF</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M8 - ALU_LCDF/A32 - adder_32bits/A8_2 - adder_8bits</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M8 - ALU_LCDF/A32 - adder_32bits/A8_3 - adder_8bits</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M8 - ALU_LCDF/A32 - adder_32bits/A8_4 - adder_8bits</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/U12_2 - RAM_32_32</ClosedNode>
+         <ClosedNode>/register_32 C:|Users|Young|Desktop|Verilog Project|Project12|register_32.v/reg8_2 - register_8bits</ClosedNode>
+         <ClosedNode>/register_32 C:|Users|Young|Desktop|Verilog Project|Project12|register_32.v/reg8_3 - register_8bits</ClosedNode>
+         <ClosedNode>/register_32 C:|Users|Young|Desktop|Verilog Project|Project12|register_32.v/reg8_4 - register_8bits</ClosedNode>
+         <ClosedNode>/register_8bits C:|Users|Young|Desktop|Verilog Project|Project12|register_8bits.v</ClosedNode>
+         <ClosedNode>PROJECT</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Top (C:/Users/Young/Desktop/Verilog Project/Project12/Top.sch)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000162000000020000000000000000000000000200000064ffffffff000000810000000300000002000001620000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>Top (C:/Users/Young/Desktop/Verilog Project/Project12/Top.sch)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>View HDL Functional Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000fc000000010000000100000000000000000000000064ffffffff000000810000000000000001000000fc0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>View HDL Functional Model</CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002a2000000040101000100000000000000000000000064ffffffff0000008100000000000000040000008e0000000100000000000000c00000000100000000000000780000000100000000000000dc0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>adder_1bit.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000121000000010001000100000000000000000000000064ffffffff000000810000000000000001000001210000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000010d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000010d0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000010d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000010d0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000010d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000010d0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M10 - Wall_CLOCK</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M11 - shift_reg_32bit</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M12 - register_file_8_32</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M12 - register_file_8_32/reg32_0 - register_32/reg8_1 - register_8bits</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M12 - register_file_8_32/reg32_0 - register_32/reg8_2 - register_8bits</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M12 - register_file_8_32/reg32_0 - register_32/reg8_3 - register_8bits</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M12 - register_file_8_32/reg32_0 - register_32/reg8_4 - register_8bits</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M12 - register_file_8_32/reg32_1 - register_32</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M12 - register_file_8_32/reg32_2 - register_32</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M12 - register_file_8_32/reg32_3 - register_32</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M12 - register_file_8_32/reg32_4 - register_32</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M12 - register_file_8_32/reg32_5 - register_32</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M12 - register_file_8_32/reg32_6 - register_32</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M12 - register_file_8_32/reg32_7 - register_32</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M8 - ALU_LCDF</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M8 - ALU_LCDF/A32 - adder_32bits/A8_2 - adder_8bits</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M8 - ALU_LCDF/A32 - adder_32bits/A8_3 - adder_8bits</ClosedNode>
+         <ClosedNode>/Top C:|Users|Young|Desktop|Verilog Project|Project12|Top.sch/M8 - ALU_LCDF/A32 - adder_32bits/A8_4 - adder_8bits</ClosedNode>
+         <ClosedNode>/reg32_test C:|Users|Young|Desktop|Verilog Project|Project12|reg32_test.v/uut - register_32</ClosedNode>
+         <ClosedNode>/reg8x32_test C:|Users|Young|Desktop|Verilog Project|Project12|reg8x32_test.v</ClosedNode>
+         <ClosedNode>/register8bits_test C:|Users|Young|Desktop|Verilog Project|Project12|register8bits_test.v</ClosedNode>
+         <ClosedNode>/register_32 C:|Users|Young|Desktop|Verilog Project|Project12|register_32.v</ClosedNode>
+         <ClosedNode>/register_8_test C:|Users|Young|Desktop|Verilog Project|Project12|register_8_test.v/uut - register_8bit</ClosedNode>
+         <ClosedNode>/register_8bit C:|Users|Young|Desktop|Verilog Project|Project12|register_8bit.v</ClosedNode>
+         <ClosedNode>/register_8bits C:|Users|Young|Desktop|Verilog Project|Project12|register_8bits.v</ClosedNode>
+         <ClosedNode>PROJECT</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>dlatch_test (C:/Users/Young/Desktop/Verilog Project/Project12/dlatch_test.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000011f000000020000000000000000000000000200000064ffffffff0000008100000003000000020000011f0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>dlatch_test (C:/Users/Young/Desktop/Verilog Project/Project12/dlatch_test.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000010d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000010d0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000010d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000010d0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000012d0000011b01000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>ISim Simulator</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>ISim Simulator</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>View HDL Instantiation Template</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000010d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000010d0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>View HDL Instantiation Template</CurrentItem>
+   </ItemView>
+</Project>
