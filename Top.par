@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-CHENYANG::  Thu Mar 19 23:52:14 2015
+CHENYANG::  Fri Mar 20 00:08:19 2015
 
 par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
 
