@@ -1,4 +1,0 @@
-verilog work "mux8to1_32.v"
-verilog work "ipcore_dir/RAM_8_16.v"
-verilog work "Decoder_3_8.v"
-verilog work "RAM_32_32.v"

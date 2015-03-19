@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\Young\Desktop\Verilog Project\COD-P1\Top.ncd
-OUTFILE=C:\Users\Young\Desktop\Verilog Project\COD-P1\Top.bit
-FAMILY=Spartan6
-PART=xc6slx16-3csg324
-WORKINGDIR=C:\Users\Young\Desktop\Verilog Project\COD-P1
-LICENSE=WebPack
-USER_INFO=210955176_0_0_253
