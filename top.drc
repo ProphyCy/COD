@@ -1,25 +1,8 @@
 Release 14.7 Drc P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Thu Mar 19 15:22:59 2015
+Thu Mar 19 23:52:32 2015
 
 drc -z Top.ncd Top.pcf
 
-WARNING:PhysDesignRules:372 - Gated clock. Clock net M10/clk_1min_adj is sourced
-   by a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net M10/clk_1hour_adj is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net M1/second_m is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net M10/clk_1day_adj is sourced
-   by a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
-   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
-   default, may be incorrect and should not be used.  For more information,
-   please reference Xilinx Answer Record 39999.
-DRC detected 0 errors and 5 warnings.  Please see the previously displayed
-individual error or warning messages for more details.
+DRC detected 0 errors and 0 warnings.

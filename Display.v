@@ -87,23 +87,6 @@ module Display(blinking,
 				5'b01101 : digit_seg <= 8'b10100001;
 				5'b01110 : digit_seg <= 8'b10000110;
 				5'b01111 : digit_seg <= 8'b10001110;
-				
-				5'b10000 : digit_seg <= 8'b11000010; 
-				5'b10001 : digit_seg <= 8'b10001011; 
-				5'b10010 : digit_seg <= 8'b10001001;
-				5'b10011 : digit_seg <= 8'b11000111;
-				5'b10100 : digit_seg <= 8'b10101011;
-				5'b10101 : digit_seg <= 8'b10100011;
-				5'b10110 : digit_seg <= 8'b10001100;
-				5'b10111 : digit_seg <= 8'b10011000;
-				5'b11000 : digit_seg <= 8'b10101111;
-				5'b11001 : digit_seg <= 8'b10000111;
-				5'b11010 : digit_seg <= 8'b11000001;
-				5'b11011 : digit_seg <= 8'b10010001;
-				5'b11100 : digit_seg <= 8'b10111111;
-				5'b11101 : digit_seg <= 8'b10111110;
-				5'b11110 : digit_seg <= 8'b10011011;
-				5'b11111 : digit_seg <= 8'b11110001;
 		endcase
 	end
 	

@@ -57,18 +57,19 @@ module ALU_LCDF(Ai,
 			end
 			4:
 			begin
-			
+				ALU_out <= ~(Ai | Bi);
 			end
 			5:
 			begin
-			
+				ALU_out <= Ai ^ Bi;
 			end
 			6:
 			begin
-			
+				ALU_out <= Ai >> Bi;
 			end
-			7:begin
-			
+			7:
+			begin
+				
 			end
 		endcase
 	end

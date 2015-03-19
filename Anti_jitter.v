@@ -20,14 +20,14 @@ module Anti_jitter(button,
                    clk, 
                    SW, 
                    button_out, 
-                   button_pluse, 
+                   button_pulse, 
                    SW_OK);
 
 	input [3:0] button;
    input clk;
    input [7:0] SW;
    output reg [3:0] button_out;
-   output reg [3:0] button_pluse;
+   output reg [3:0] button_pulse;
    output reg [7:0] SW_OK;
 
 	reg [31:0] counter;
@@ -50,8 +50,8 @@ module Anti_jitter(button,
 				button_out <= button;
 				pluse <= 1;
 				if(!pluse)
-					button_pluse <= button;
-				else button_pluse <= 0;
+					button_pulse <= button;
+				else button_pulse <= 0;
 				SW_OK <= SW;
 				end
 		end    

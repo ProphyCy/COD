@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Thu Mar 19 15:22:37 2015">
+<application name="pn" timeStamp="Thu Mar 19 23:52:14 2015">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="36FF04509A6242999CB1BF9F2BEC9E1F" type="project"/>
-<property name="ProjectIteration" value="19" type="project"/>
+<property name="ProjectIteration" value="21" type="project"/>
 <property name="ProjectFile" value="C:/Users/Young/Desktop/Verilog Project/COD-P1/COD-P1.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2014-12-15T20:07:58" type="project"/>
 </section>
@@ -25,7 +25,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2014-12-15T20:07:58" type="design"/>
 <property name="PROP_intWbtProjectID" value="36FF04509A6242999CB1BF9F2BEC9E1F" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="19" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="21" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_selectedSimRootSourceNode_behav" value="work.dlatch_test" type="process"/>
@@ -39,10 +39,10 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_DevSpeed" value="-3" type="design"/>
 <property name="PROP_PreferredLanguage" value="Verilog" type="design"/>
 <property name="FILE_COREGEN" value="2" type="source"/>
+<property name="FILE_COREGEN_MISC" value="1" type="source"/>
 <property name="FILE_SCHEMATIC" value="1" type="source"/>
-<property name="FILE_SYMBOL" value="2" type="source"/>
 <property name="FILE_UCF" value="1" type="source"/>
-<property name="FILE_VERILOG" value="30" type="source"/>
+<property name="FILE_VERILOG" value="17" type="source"/>
 </section>
 </application>
 </document>

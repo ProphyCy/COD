@@ -5,14 +5,10 @@ C:\Xilinx\14.7\ISE_DS\ISE\.
    "Top" is an NCD, version 3.2, device xc6slx16, package csg324, speed -3
 Opened constraints file Top.pcf.
 
-Thu Mar 19 15:22:59 2015
+Thu Mar 19 23:52:32 2015
 
 C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g Reset_on_err:No -g ConfigRate:2 -g ProgPin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g ExtMasterCclk_en:No -g SPI_buswidth:1 -g TIMER_CFG:0xFFFF -g multipin_wakeup:No -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:Yes -g DriveDone:No -g en_sw_gsr:No -g drive_awake:No -g sw_clk:Startupclk -g sw_gwe_cycle:5 -g sw_gts_cycle:4 Top.ncd 
 
-INFO:Bitgen:341 - This design is using one or more 9K Block RAMs (RAMB8BWER). 
-   9K Block RAM initialization data, both user defined and default, requires a
-   special bit stream format.  For more information, please reference Xilinx
-   Answer Record 39999.
 Summary of Bitgen Options:
 +----------------------+----------------------+
 | Option Name          | Current Setting      |
@@ -132,24 +128,7 @@ There were 0 CONFIG constraint(s) processed from Top.pcf.
 
 
 Running DRC.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net M10/clk_1min_adj is sourced
-   by a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net M10/clk_1hour_adj is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net M1/second_m is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net M10/clk_1day_adj is sourced
-   by a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
-   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
-   default, may be incorrect and should not be used.  For more information,
-   please reference Xilinx Answer Record 39999.
-DRC detected 0 errors and 5 warnings.  Please see the previously displayed
-individual error or warning messages for more details.
+DRC detected 0 errors and 0 warnings.
 Creating bit map...
 Saving bit stream in "top.bit".
 Bitstream generation is complete.

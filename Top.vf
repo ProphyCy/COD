@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Top.vf
-// /___/   /\     Timestamp : 03/19/2015 15:21:45
+// /___/   /\     Timestamp : 03/19/2015 23:36:22
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -34,139 +34,102 @@ module Top(BTN,
    output [7:0] LED;
    output [7:0] SEGMENT;
    
-   wire [31:0] A;
-   wire [31:0] B;
+   wire [31:0] ALU_out;
    wire [3:0] blinke;
    wire [3:0] button_out;
-   wire clk_1ms;
-   wire clk_1s;
-   wire [25:0] count_out;
+   wire [31:0] clkdiv;
    wire Cout;
+   wire CPU_CLK;
    wire N0;
-   wire Qa;
-   wire Qb;
-   wire Qc;
-   wire Qd;
-   wire Rc_4;
    wire [7:0] SW_OK;
-   wire [3:0] s_point;
-   wire [15:0] Time_out;
-   wire [3:0] t_blinke;
-   wire XLXN_9;
+   wire V5;
    wire [3:0] XLXN_17;
    wire [3:0] XLXN_18;
    wire [31:0] XLXN_53;
-   wire [31:0] XLXN_59;
-   wire [31:0] XLXN_73;
-   wire XLXN_94;
-   wire [31:0] XLXN_96;
-   wire [31:0] XLXN_128;
-   wire [31:0] XLXN_130;
-   wire XLXN_134;
-   wire [31:0] XLXN_138;
+   wire [31:0] XLXN_163;
+   wire [31:0] XLXN_164;
+   wire [31:0] XLXN_192;
+   wire XLXN_200;
+   wire [31:0] XLXN_201;
+   wire [31:0] XLXN_202;
+   wire [31:0] XLXN_207;
+   wire Zero;
    
-   counter_26bit  M1 (.clk(clk_50mhz), 
-                     .reset(XLXN_9), 
-                     .clk_1ms(clk_1ms), 
-                     .count_out(count_out[25:0]));
-   Anti_jitter  M2 (.button(BTN[3:0]), 
-                   .clk(clk_50mhz), 
-                   .SW(SW[7:0]), 
-                   .button_out(button_out[3:0]), 
-                   .button_pluse(), 
-                   .SW_OK(SW_OK[7:0]));
+   SignalExt_32  Ext_logic (.S(button_out[0]), 
+                           .So(XLXN_207[31:0]));
+   Ext_32  Ext32 (.imm_16(ALU_out[15:0]), 
+                 .Imm_32(XLXN_192[31:0]));
    Display  M3 (.blinking(XLXN_18[3:0]), 
                .disp_num(XLXN_53[31:0]), 
-               .flash_clk(count_out[24]), 
+               .flash_clk(clkdiv[24]), 
                .pointing(XLXN_17[3:0]), 
-               .Scanning(count_out[19:18]), 
+               .Scanning(clkdiv[19:18]), 
                .SW(SW_OK[1:0]), 
                .AN(AN[3:0]), 
                .SEGMENT(SEGMENT[7:0]));
    Input_2_32bit  M4 (.disp_ctr({SW[7:5], SW[1:0]}), 
                      .push_out(button_out[2:0]), 
-                     .Ai(A[31:0]), 
-                     .Bi(B[31:0]), 
+                     .Ai(XLXN_163[31:0]), 
+                     .Bi(XLXN_164[31:0]), 
                      .blinke(blinke[3:0]), 
                      .state());
    Output_2_Disp  M5 (.blink_in({N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, 
-         N0, t_blinke[3:0], N0, N0, N0, N0, N0, N0, N0, N0, blinke[3:0], 
+         N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, blinke[3:0], 
          blinke[3:0]}), 
                      .clk(clk_50mhz), 
                      .Disp_sel(SW[7:5]), 
-                     .Disp0(XLXN_59[31:0]), 
-                     .Disp1(A[31:0]), 
-                     .Disp2(B[31:0]), 
-                     .Disp3(XLXN_73[31:0]), 
-                     .Disp4({N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, 
-         N0, N0, N0, N0, Time_out[15:0]}), 
-                     .Disp5(XLXN_96[31:0]), 
-                     .Disp6(XLXN_128[31:0]), 
-                     .Disp7(XLXN_130[31:0]), 
+                     .Disp0(XLXN_163[31:0]), 
+                     .Disp1(XLXN_164[31:0]), 
+                     .Disp2(ALU_out[31:0]), 
+                     .Disp3(XLXN_192[31:0]), 
+                     .Disp4(XLXN_207[31:0]), 
+                     .Disp5(clkdiv[31:0]), 
+                     .Disp6(XLXN_201[31:0]), 
+                     .Disp7(XLXN_202[31:0]), 
                      .EN(), 
-                     .point_in({N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, 
-         s_point[3:0], N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, 
-         N0, N0}), 
+                     .point_in({V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, 
+         V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, 
+         V5, V5, V5}), 
                      .rst(), 
                      .blink_out(XLXN_18[3:0]), 
                      .Disp_num(XLXN_53[31:0]), 
                      .point_out(XLXN_17[3:0]));
    LED_DEV  M6 (.clk(), 
                .Data_in({N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, 
-         N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, SW[1], N0, Qa, Qb, Qc, Qd, 
-         Rc_4, Cout}), 
+         N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, SW[1], CPU_CLK, Cout, 
+         Zero, clkdiv[27:24]}), 
                .EN(), 
                .rst(), 
                .LED(LED[7:0]), 
                .Other_out());
-   counter_1s  M7 (.clk(clk_50mhz), 
-                  .clk_1s(clk_1s));
-   ALU_LCDF  M8 (.Ai(A[31:0]), 
+   ALU_LCDF  M8 (.Ai(XLXN_163[31:0]), 
                 .ALU_Ctr(SW[4:2]), 
-                .Bi(B[31:0]), 
-                .C(button_out[2]), 
-                .ALU_out(XLXN_59[31:0]), 
+                .Bi(XLXN_164[31:0]), 
+                .C(button_out[0]), 
+                .ALU_out(ALU_out[31:0]), 
                 .Cout(Cout));
-   counter_4bit  M9 (.clk(clk_1s), 
-                    .Qa(Qa), 
-                    .Qb(Qb), 
-                    .Qc(Qc), 
-                    .Qd(Qd), 
-                    .Rc(Rc_4));
-   counter_32bit_rev  M9_1 (.clk(clk_1s), 
-                           .cnt_init(A[31:0]), 
-                           .push_init(button_out[1]), 
-                           .s(button_out[0]), 
-                           .cnt(XLXN_73[31:0]), 
-                           .Rc());
-   Wall_CLOCK  M10 (.adj_push(button_out[2:0]), 
+   ROM_B  U2 (.a({N0, N0, N0, N0, N0, SW[3], clkdiv[27:24]}), 
+             .spo(XLXN_201[31:0]));
+   RAM_B  U3 (.addra({N0, N0, N0, N0, N0, SW[3], clkdiv[27:24]}), 
+             .clka(XLXN_200), 
+             .dina(XLXN_201[31:0]), 
+             .wea(SW_OK[4]), 
+             .douta(XLXN_202[31:0]));
+   clk_div  U8 (.clk(clk_50mhz), 
+               .rst(N0), 
+               .SW2(SW_OK[2]), 
+               .clkdiv(clkdiv[31:0]), 
+               .Clk_CPU(CPU_CLK));
+   Anti_jitter  U9 (.button(BTN[3:0]), 
                    .clk(clk_50mhz), 
-                   .clk_1ms(clk_1ms), 
-                   .inc(count_out[21]), 
-                   .reset(XLXN_94), 
-                   .s_point(s_point[3:0]), 
-                   .Time_out(Time_out[15:0]), 
-                   .t_blinke(t_blinke[3:0]));
-   shift_reg_32bit  M11 (.clk(clk_1s), 
-                        .p_in(A[31:0]), 
-                        .S(button_out[1]), 
-                        .s_in(button_out[0]), 
-                        .Q(XLXN_96[31:0]));
-   register_file_8_32  M12 (.Address({Qc, Qb, Qa}), 
-                           .CE(SW_OK[4]), 
-                           .clk(clk_1ms), 
-                           .cr(XLXN_134), 
-                           .Di(XLXN_138[31:0]), 
-                           .Do(XLXN_128[31:0]));
-   ROM_32_32  M12_1 (.a({SW[3], SW[2], Qc, Qb, Qa}), 
-                    .spo(XLXN_138[31:0]));
-   RAM_32_32  U12_2 (.addra({SW[3], SW[2], Qc, Qb, Qa}), 
-                    .clka(clk_1ms), 
-                    .dina(XLXN_128[31:0]), 
-                    .wea(SW_OK[4]), 
-                    .douta(XLXN_130[31:0]));
-   VCC  XLXI_7 (.P(XLXN_9));
+                   .SW(SW[7:0]), 
+                   .button_out(button_out[3:0]), 
+                   .button_pulse(), 
+                   .SW_OK(SW_OK[7:0]));
    GND  XLXI_8 (.G(N0));
-   VCC  XLXI_10 (.P(XLXN_94));
-   VCC  XLXI_13 (.P(XLXN_134));
+   VCC  XLXI_14 (.P(V5));
+   INV  XLXI_20 (.I(clk_50mhz), 
+                .O(XLXN_200));
+   or_bit_32  Zero_Result (.A(ALU_out[31:0]), 
+                          .o(Zero));
 endmodule

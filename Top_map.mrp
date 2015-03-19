@@ -10,40 +10,40 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Thu Mar 19 15:22:06 2015
+Mapped Date    : Thu Mar 19 23:52:04 2015
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    6
+Number of warnings:    0
 Slice Logic Utilization:
-  Number of Slice Registers:                   346 out of  18,224    1%
-    Number used as Flip Flops:                 311
-    Number used as Latches:                     35
+  Number of Slice Registers:                   203 out of  18,224    1%
+    Number used as Flip Flops:                 171
+    Number used as Latches:                     32
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      1,655 out of   9,112   18%
-    Number used as logic:                    1,651 out of   9,112   18%
-      Number using O6 output only:           1,448
-      Number using O5 output only:              75
-      Number using O5 and O6:                  128
+  Number of Slice LUTs:                        499 out of   9,112    5%
+    Number used as logic:                      497 out of   9,112    5%
+      Number using O6 output only:             379
+      Number using O5 output only:              45
+      Number using O5 and O6:                   73
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   2,176    0%
-    Number used exclusively as route-thrus:      4
+    Number used exclusively as route-thrus:      2
       Number with same-slice register load:      0
-      Number with same-slice carry load:         4
+      Number with same-slice carry load:         2
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   529 out of   2,278   23%
-  Number of MUXCYs used:                       160 out of   4,556    3%
-  Number of LUT Flip Flop pairs used:        1,668
-    Number with an unused Flip Flop:         1,351 out of   1,668   80%
-    Number with an unused LUT:                  13 out of   1,668    1%
-    Number of fully used LUT-FF pairs:         304 out of   1,668   18%
-    Number of unique control sets:              24
+  Number of occupied Slices:                   206 out of   2,278    9%
+  Number of MUXCYs used:                        76 out of   4,556    1%
+  Number of LUT Flip Flop pairs used:          509
+    Number with an unused Flip Flop:           324 out of     509   63%
+    Number with an unused LUT:                  10 out of     509    1%
+    Number of fully used LUT-FF pairs:         175 out of     509   34%
+    Number of unique control sets:               7
     Number of slice register sites lost
-      to control set restrictions:             118 out of  18,224    1%
+      to control set restrictions:              21 out of  18,224    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -56,12 +56,12 @@ IO Utilization:
     Number of LOCed IOBs:                       33 out of      33  100%
 
 Specific Feature Utilization:
-  Number of RAMB16BWERs:                         0 out of      32    0%
-  Number of RAMB8BWERs:                          8 out of      64   12%
+  Number of RAMB16BWERs:                         2 out of      32    6%
+  Number of RAMB8BWERs:                          0 out of      64    0%
   Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
   Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
-  Number of BUFG/BUFGMUXs:                       4 out of      16   25%
-    Number used as BUFGs:                        4
+  Number of BUFG/BUFGMUXs:                       3 out of      16   18%
+    Number used as BUFGs:                        3
     Number used as BUFGMUX:                      0
   Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
   Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
@@ -80,11 +80,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                3.41
+Average Fanout of Non-Clock Nets:                4.25
 
-Peak Memory Usage:  275 MB
-Total REAL time to MAP completion:  29 secs 
-Total CPU time to MAP completion:   28 secs 
+Peak Memory Usage:  266 MB
+Total REAL time to MAP completion:  8 secs 
+Total CPU time to MAP completion:   8 secs 
 
 Table of Contents
 -----------------
@@ -107,34 +107,6 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
-WARNING:Place:1109 - A clock IOB / BUFGMUX clock component pair have been found
-   that are not placed at an optimal clock IOB / BUFGMUX site pair. The clock
-   IOB component <SW<4>> is placed at site <N8>. The corresponding BUFG
-   component <SW_4_IBUF_BUFG> is placed at site <BUFGMUX_X2Y1>. There is only a
-   select set of IOBs that can use the fast path to the Clocker buffer, and they
-   are not being used. You may want to analyze why this problem exists and
-   correct it. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE
-   constraint was applied on COMP.PIN <SW<4>.PAD> allowing your design to
-   continue. This constraint disables all clock placer rules related to the
-   specified COMP.PIN. The use of this override is highly discouraged as it may
-   lead to very poor timing results. It is recommended that this error condition
-   be corrected in the design.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net M10/clk_1min_adj is sourced
-   by a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net M10/clk_1hour_adj is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net M1/second_m is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net M10/clk_1day_adj is sourced
-   by a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
-   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
-   default, may be incorrect and should not be used.  For more information,
-   please reference Xilinx Answer Record 39999.
 
 Section 3 - Informational
 -------------------------
@@ -152,30 +124,16 @@ INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-  18 block(s) optimized away
+   4 block(s) optimized away
 
 Section 5 - Removed Logic
 -------------------------
 
 Optimized Block(s):
 TYPE 		BLOCK
-GND 		U12_2/M00/XST_GND
-VCC 		U12_2/M00/XST_VCC
-GND 		U12_2/M01/XST_GND
-VCC 		U12_2/M01/XST_VCC
-GND 		U12_2/M10/XST_GND
-VCC 		U12_2/M10/XST_VCC
-GND 		U12_2/M11/XST_GND
-VCC 		U12_2/M11/XST_VCC
-GND 		U12_2/M20/XST_GND
-VCC 		U12_2/M20/XST_VCC
-GND 		U12_2/M21/XST_GND
-VCC 		U12_2/M21/XST_VCC
-GND 		U12_2/M30/XST_GND
-VCC 		U12_2/M30/XST_VCC
-GND 		U12_2/M31/XST_GND
-VCC 		U12_2/M31/XST_VCC
-VCC 		XLXI_13
+GND 		U3/XST_GND
+VCC 		U3/XST_VCC
+VCC 		XLXI_14
 GND 		XLXI_8
 
 To enable printing of redundant blocks removed and signals merged, set the
