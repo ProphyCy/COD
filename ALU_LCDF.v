@@ -55,6 +55,21 @@ module ALU_LCDF(Ai,
 			begin
 				ALU_out <= (Ai < Bi) ? 1 : 0;
 			end
+			4:
+			begin
+			
+			end
+			5:
+			begin
+			
+			end
+			6:
+			begin
+			
+			end
+			7:begin
+			
+			end
 		endcase
 	end
    
