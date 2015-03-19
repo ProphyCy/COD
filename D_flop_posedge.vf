@@ -1,0 +1,70 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : D_flop_posedge.vf
+// /___/   /\     Timestamp : 12/29/2014 21:42:47
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "C:/Users/Young/Desktop/Verilog Project/Project12/D_flop_posedge.vf" -w "C:/Users/Young/Desktop/Verilog Project/Project12/D_flop_posedge.sch"
+//Design Name: D_flop_posedge
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module D_flop_posedge(clk, 
+                      D, 
+                      R, 
+                      S, 
+                      NQ, 
+                      Q);
+
+    input clk;
+    input D;
+    input R;
+    input S;
+   output NQ;
+   output Q;
+   
+   wire XLXN_7;
+   wire XLXN_12;
+   wire XLXN_25;
+   wire XLXN_28;
+   wire Q_DUMMY;
+   wire NQ_DUMMY;
+   
+   assign NQ = NQ_DUMMY;
+   assign Q = Q_DUMMY;
+   AND3  XLXI_1 (.I0(D), 
+                .I1(XLXN_25), 
+                .I2(R), 
+                .O(XLXN_12));
+   NAND3  XLXI_3 (.I0(S), 
+                 .I1(XLXN_28), 
+                 .I2(XLXN_12), 
+                 .O(XLXN_7));
+   NAND3  XLXI_4 (.I0(XLXN_28), 
+                 .I1(XLXN_12), 
+                 .I2(clk), 
+                 .O(XLXN_25));
+   NAND3  XLXI_5 (.I0(XLXN_25), 
+                 .I1(XLXN_7), 
+                 .I2(clk), 
+                 .O(XLXN_28));
+   NAND3  XLXI_6 (.I0(Q_DUMMY), 
+                 .I1(XLXN_25), 
+                 .I2(R), 
+                 .O(NQ_DUMMY));
+   NAND3  XLXI_7 (.I0(S), 
+                 .I1(XLXN_28), 
+                 .I2(NQ_DUMMY), 
+                 .O(Q_DUMMY));
+endmodule
