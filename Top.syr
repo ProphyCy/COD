@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: Top.prj
 
@@ -314,7 +314,7 @@ Unit <LED_DEV> synthesized.
 
 Synthesizing Unit <ALU_LCDF>.
     Related source file is "C:\Users\Young\Desktop\Verilog Project\COD-P1\ALU_LCDF.v".
-    Found 32-bit shifter logical right for signal <Ai[31]_Bi[31]_shift_right_8_OUT> created at line 68
+    Found 32-bit shifter logical right for signal <Ai[31]_Bi[10]_shift_right_8_OUT> created at line 68
     Found 1-bit 7-to-1 multiplexer for signal <ALU_Ctr[2]_ALU_out[31]_wide_mux_9_OUT<31>> created at line 39.
     Found 1-bit 7-to-1 multiplexer for signal <ALU_Ctr[2]_ALU_out[31]_wide_mux_9_OUT<30>> created at line 39.
     Found 1-bit 7-to-1 multiplexer for signal <ALU_Ctr[2]_ALU_out[31]_wide_mux_9_OUT<29>> created at line 39.
@@ -383,7 +383,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <ALU_out<31>>. Latches may be gen
     Summary:
 	inferred  32 Latch(s).
 	inferred   1 Comparator(s).
-	inferred  33 Multiplexer(s).
+	inferred  32 Multiplexer(s).
 	inferred   1 Combinational logic shifter(s).
 Unit <ALU_LCDF> synthesized.
 
@@ -408,7 +408,7 @@ Synthesizing Unit <clk_div>.
     Related source file is "C:\Users\Young\Desktop\Verilog Project\COD-P1\clk_div.v".
     Found 1-bit register for signal <Clk_CPU>.
     Found 32-bit register for signal <clkdiv>.
-    Found 32-bit adder for signal <clkdiv[31]_GND_47_o_add_2_OUT> created at line 40.
+    Found 32-bit adder for signal <clkdiv[31]_GND_46_o_add_2_OUT> created at line 40.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  33 D-type flip-flop(s).
@@ -424,10 +424,10 @@ Synthesizing Unit <Anti_jitter>.
     Found 4-bit register for signal <button_pulse>.
     Found 8-bit register for signal <SW_OK>.
     Found 4-bit register for signal <btn_temp>.
-    Found 32-bit adder for signal <counter[31]_GND_48_o_add_4_OUT> created at line 48.
+    Found 32-bit adder for signal <counter[31]_GND_47_o_add_4_OUT> created at line 48.
     Found 4-bit comparator not equal for signal <n0000> created at line 42
     Found 8-bit comparator not equal for signal <n0002> created at line 42
-    Found 32-bit comparator greater for signal <counter[31]_GND_48_o_LessThan_4_o> created at line 47
+    Found 32-bit comparator greater for signal <counter[31]_GND_47_o_LessThan_4_o> created at line 47
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  61 D-type flip-flop(s).
@@ -463,11 +463,10 @@ Macro Statistics
  32-bit comparator greater                             : 2
  4-bit comparator not equal                            : 1
  8-bit comparator not equal                            : 1
-# Multiplexers                                         : 66
+# Multiplexers                                         : 65
  1-bit 2-to-1 multiplexer                              : 17
  1-bit 4-to-1 multiplexer                              : 5
  1-bit 7-to-1 multiplexer                              : 32
- 32-bit 2-to-1 multiplexer                             : 1
  32-bit 8-to-1 multiplexer                             : 3
  4-bit 2-to-1 multiplexer                              : 6
  8-bit 2-to-1 multiplexer                              : 1
@@ -535,11 +534,10 @@ Macro Statistics
  32-bit comparator greater                             : 2
  4-bit comparator not equal                            : 1
  8-bit comparator not equal                            : 1
-# Multiplexers                                         : 65
+# Multiplexers                                         : 64
  1-bit 2-to-1 multiplexer                              : 16
  1-bit 4-to-1 multiplexer                              : 5
  1-bit 7-to-1 multiplexer                              : 32
- 32-bit 2-to-1 multiplexer                             : 1
  32-bit 8-to-1 multiplexer                             : 3
  4-bit 2-to-1 multiplexer                              : 6
  8-bit 2-to-1 multiplexer                              : 1
@@ -599,7 +597,7 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U9/counter_17> (wit
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 9.
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 8.
 
 Final Macro Processing ...
 
@@ -631,17 +629,17 @@ Top Level Output File Name         : Top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 726
+# BELS                             : 732
 #      GND                         : 2
 #      INV                         : 5
 #      LUT1                        : 47
-#      LUT2                        : 10
-#      LUT3                        : 35
-#      LUT4                        : 108
-#      LUT5                        : 145
-#      LUT6                        : 246
+#      LUT2                        : 9
+#      LUT3                        : 60
+#      LUT4                        : 107
+#      LUT5                        : 152
+#      LUT6                        : 214
 #      MUXCY                       : 68
-#      MUXF7                       : 9
+#      MUXF7                       : 17
 #      VCC                         : 2
 #      XORCY                       : 49
 # FlipFlops/Latches                : 203
@@ -666,14 +664,14 @@ Selected Device : 6slx16csg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:             203  out of  18224     1%  
- Number of Slice LUTs:                  596  out of   9112     6%  
-    Number used as Logic:               596  out of   9112     6%  
+ Number of Slice LUTs:                  594  out of   9112     6%  
+    Number used as Logic:               594  out of   9112     6%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    610
-   Number with an unused Flip Flop:     407  out of    610    66%  
-   Number with an unused LUT:            14  out of    610     2%  
-   Number of fully used LUT-FF pairs:   189  out of    610    30%  
+ Number of LUT Flip Flop pairs used:    608
+   Number with an unused Flip Flop:     405  out of    608    66%  
+   Number with an unused LUT:            14  out of    608     2%  
+   Number of fully used LUT-FF pairs:   189  out of    608    31%  
    Number of unique control sets:         8
 
 IO Utilization: 
@@ -707,7 +705,7 @@ Clock Information:
 Clock Signal                                                       | Clock buffer(FF name)                                                                                                         | Load  |
 -------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+-------+
 clk_50mhz                                                          | IBUF+BUFG                                                                                                                     | 107   |
-M8/ALU_Ctr[2]_GND_13_o_Mux_10_o(M8/ALU_Ctr[2]_GND_13_o_Mux_10_o1:O)| BUFG(*)(M8/ALU_out_1)                                                                                                         | 32    |
+M8/ALU_Ctr[2]_GND_12_o_Mux_10_o(M8/ALU_Ctr[2]_GND_12_o_Mux_10_o1:O)| BUFG(*)(M8/ALU_out_1)                                                                                                         | 32    |
 U9/button_out_0                                                    | NONE(M4/state_1)                                                                                                              | 2     |
 U9/button_out_2                                                    | BUFG                                                                                                                          | 64    |
 U3/N1                                                              | NONE(U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram)| 2     |
@@ -726,7 +724,7 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: 8.306ns (Maximum Frequency: 120.393MHz)
-   Minimum input arrival time before clock: 6.306ns
+   Minimum input arrival time before clock: 6.213ns
    Maximum output required time after clock: 20.064ns
    Maximum combinational path delay: 5.413ns
 
@@ -784,72 +782,69 @@ Delay:               2.960ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'U9/button_out_2'
-  Clock period: 2.650ns (frequency: 377.389MHz)
+  Clock period: 2.651ns (frequency: 377.274MHz)
   Total number of paths / destination ports: 160 / 64
 -------------------------------------------------------------------------
-Delay:               2.650ns (Levels of Logic = 1)
-  Source:            M4/Bi_2 (FF)
-  Destination:       M4/Bi_2 (FF)
+Delay:               2.651ns (Levels of Logic = 1)
+  Source:            M4/Bi_9 (FF)
+  Destination:       M4/Bi_9 (FF)
   Source Clock:      U9/button_out_2 rising
   Destination Clock: U9/button_out_2 rising
 
-  Data Path: M4/Bi_2 to M4/Bi_2
+  Data Path: M4/Bi_9 to M4/Bi_9
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             49   0.447   1.898  M4/Bi_2 (M4/Bi_2)
-     LUT6:I0->O            1   0.203   0.000  M4/Mmux_disp_ctr[1]_Bi[31]_wide_mux_30_OUT231 (M4/disp_ctr[1]_Bi[31]_wide_mux_30_OUT<2>)
-     FDE:D                     0.102          M4/Bi_2
+     FDE:C->Q             51   0.447   1.899  M4/Bi_9 (M4/Bi_9)
+     LUT5:I0->O            1   0.203   0.000  M4/Mmux_disp_ctr[1]_Bi[31]_wide_mux_30_OUT321 (M4/disp_ctr[1]_Bi[31]_wide_mux_30_OUT<9>)
+     FDE:D                     0.102          M4/Bi_9
     ----------------------------------------
-    Total                      2.650ns (0.752ns logic, 1.898ns route)
+    Total                      2.651ns (0.752ns logic, 1.899ns route)
                                        (28.4% logic, 71.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_50mhz'
   Total number of paths / destination ports: 798 / 114
 -------------------------------------------------------------------------
-Offset:              6.236ns (Levels of Logic = 6)
-  Source:            SW<3> (PAD)
-  Destination:       M5/Disp_num_30 (FF)
+Offset:              6.213ns (Levels of Logic = 4)
+  Source:            SW<1> (PAD)
+  Destination:       U9/counter_16 (FF)
   Destination Clock: clk_50mhz rising
 
-  Data Path: SW<3> to M5/Disp_num_30
+  Data Path: SW<1> to U9/counter_16
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            89   1.222   2.149  SW_3_IBUF (SW_3_IBUF)
-     begin scope: 'U2:a<4>'
-     LUT5:I0->O            1   0.203   0.580  spo<30>_SW0 (N50)
-     LUT6:I5->O            4   0.205   0.788  spo<30> (spo<26>)
-     end scope: 'U2:spo<26>'
-     LUT5:I3->O            1   0.203   0.580  M5/Mmux_Disp_sel[2]_Disp7[31]_wide_mux_1_OUT193 (M5/Mmux_Disp_sel[2]_Disp7[31]_wide_mux_1_OUT192)
-     LUT6:I5->O            1   0.205   0.000  M5/Mmux_Disp_sel[2]_Disp7[31]_wide_mux_1_OUT194 (M5/Disp_sel[2]_Disp7[31]_wide_mux_1_OUT<26>)
-     FD:D                      0.102          M5/Disp_num_26
+     IBUF:I->O            61   1.222   1.725  SW_1_IBUF (SW_1_IBUF)
+     LUT4:I2->O            1   0.203   0.580  U9/btn_temp[3]_sw_temp[7]_OR_51_o1 (U9/btn_temp[3]_sw_temp[7]_OR_51_o1)
+     LUT5:I4->O            2   0.205   0.617  U9/btn_temp[3]_sw_temp[7]_OR_51_o2 (U9/btn_temp[3]_sw_temp[7]_OR_51_o2)
+     LUT5:I4->O           17   0.205   1.027  U9/btn_temp[3]_sw_temp[7]_OR_51_o7 (U9/btn_temp[3]_sw_temp[7]_OR_51_o)
+     FDRE:R                    0.430          U9/counter_0
     ----------------------------------------
-    Total                      6.236ns (2.140ns logic, 4.096ns route)
-                                       (34.3% logic, 65.7% route)
+    Total                      6.213ns (2.265ns logic, 3.948ns route)
+                                       (36.5% logic, 63.5% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'M8/ALU_Ctr[2]_GND_13_o_Mux_10_o'
-  Total number of paths / destination ports: 249 / 32
+Timing constraint: Default OFFSET IN BEFORE for Clock 'M8/ALU_Ctr[2]_GND_12_o_Mux_10_o'
+  Total number of paths / destination ports: 169 / 32
 -------------------------------------------------------------------------
-Offset:              6.306ns (Levels of Logic = 4)
-  Source:            SW<3> (PAD)
-  Destination:       M8/ALU_out_4 (LATCH)
-  Destination Clock: M8/ALU_Ctr[2]_GND_13_o_Mux_10_o falling
+Offset:              5.075ns (Levels of Logic = 4)
+  Source:            SW<4> (PAD)
+  Destination:       M8/ALU_out_25 (LATCH)
+  Destination Clock: M8/ALU_Ctr[2]_GND_12_o_Mux_10_o falling
 
-  Data Path: SW<3> to M8/ALU_out_4
+  Data Path: SW<4> to M8/ALU_out_25
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            89   1.222   1.909  SW_3_IBUF (SW_3_IBUF)
-     LUT4:I2->O           27   0.203   1.585  M8/Mmux_ALU_Ctr[2]_ALU_out[31]_wide_mux_9_OUT<0>_2_f71151 (M8/Mmux_ALU_Ctr[2]_ALU_out[31]_wide_mux_9_OUT<0>_2_f7115)
-     LUT6:I0->O            1   0.203   0.944  M8/Mmux_ALU_Ctr[2]_ALU_out[31]_wide_mux_9_OUT<0>_2_f753 (M8/Mmux_ALU_Ctr[2]_ALU_out[31]_wide_mux_9_OUT<0>_2_f752)
-     LUT6:I0->O            1   0.203   0.000  M8/Mmux_ALU_Ctr[2]_ALU_out[31]_wide_mux_9_OUT<0>_2_f755 (M8/ALU_Ctr[2]_ALU_out[31]_wide_mux_9_OUT<14>)
-     LD:D                      0.037          M8/ALU_out_14
+     IBUF:I->O            59   1.222   1.835  SW_4_IBUF (SW_4_IBUF)
+     LUT3:I0->O            4   0.205   0.684  M8/Mmux_ALU_Ctr[2]_ALU_out[31]_wide_mux_9_OUT<24>1311 (M8/Mmux_ALU_Ctr[2]_ALU_out[31]_wide_mux_9_OUT<24>131)
+     LUT6:I5->O            1   0.205   0.684  M8/Mmux_ALU_Ctr[2]_ALU_out[31]_wide_mux_9_OUT<25>11 (M8/Mmux_ALU_Ctr[2]_ALU_out[31]_wide_mux_9_OUT<25>1)
+     LUT3:I1->O            1   0.203   0.000  M8/Mmux_ALU_Ctr[2]_ALU_out[31]_wide_mux_9_OUT<25>14 (M8/ALU_Ctr[2]_ALU_out[31]_wide_mux_9_OUT<25>)
+     LD:D                      0.037          M8/ALU_out_25
     ----------------------------------------
-    Total                      6.306ns (1.868ns logic, 4.438ns route)
-                                       (29.6% logic, 70.4% route)
+    Total                      5.075ns (1.872ns logic, 3.203ns route)
+                                       (36.9% logic, 63.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'U9/button_out_0'
@@ -877,16 +872,16 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'U9/button_out_2'
 -------------------------------------------------------------------------
 Offset:              5.093ns (Levels of Logic = 2)
   Source:            SW<7> (PAD)
-  Destination:       M4/Bi_31 (FF)
+  Destination:       M4/Ai_31 (FF)
   Destination Clock: U9/button_out_2 rising
 
-  Data Path: SW<7> to M4/Bi_31
+  Data Path: SW<7> to M4/Ai_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            92   1.222   2.053  SW_7_IBUF (SW_7_IBUF)
-     LUT3:I0->O           32   0.205   1.291  M4/_n0127_inv1 (M4/_n0127_inv)
-     FDE:CE                    0.322          M4/Bi_0
+     LUT3:I0->O           32   0.205   1.291  M4/disp_ctr[4]_GND_5_o_equal_12_o<4>1 (M4/disp_ctr[4]_GND_5_o_equal_12_o)
+     FDE:CE                    0.322          M4/Ai_0
     ----------------------------------------
     Total                      5.093ns (1.749ns logic, 3.344ns route)
                                        (34.3% logic, 65.7% route)
@@ -930,17 +925,17 @@ Offset:              20.064ns (Levels of Logic = 17)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'U9/button_out_2'
   Total number of paths / destination ports: 64 / 1
 -------------------------------------------------------------------------
-Offset:              19.898ns (Levels of Logic = 17)
-  Source:            M4/Bi_1 (FF)
+Offset:              19.401ns (Levels of Logic = 17)
+  Source:            M4/Ai_1 (FF)
   Destination:       LED<5> (PAD)
   Source Clock:      U9/button_out_2 rising
 
-  Data Path: M4/Bi_1 to LED<5>
+  Data Path: M4/Ai_1 to LED<5>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             45   0.447   1.724  M4/Bi_1 (M4/Bi_1)
-     LUT5:I1->O            3   0.203   0.755  M8/A32/A8_1/A2/out1 (M8/A32/A8_1/carry<1>)
+     FDE:C->Q             11   0.447   1.227  M4/Ai_1 (M4/Ai_1)
+     LUT5:I0->O            3   0.203   0.755  M8/A32/A8_1/A2/out1 (M8/A32/A8_1/carry<1>)
      LUT6:I4->O            3   0.203   0.755  M8/A32/A8_1/A4/out1 (M8/A32/A8_1/carry<3>)
      LUT6:I4->O            3   0.203   0.755  M8/A32/A8_1/A6/out1 (M8/A32/A8_1/carry<5>)
      LUT6:I4->O            3   0.203   0.755  M8/A32/A8_1/A8/out1 (M8/A32/carry<0>)
@@ -958,17 +953,17 @@ Offset:              19.898ns (Levels of Logic = 17)
      LUT6:I4->O            1   0.203   0.579  M8/A32/A8_4/A8/out1 (Cout)
      OBUF:I->O                 2.571          LED_5_OBUF (LED<5>)
     ----------------------------------------
-    Total                     19.898ns (6.266ns logic, 13.632ns route)
-                                       (31.5% logic, 68.5% route)
+    Total                     19.401ns (6.266ns logic, 13.135ns route)
+                                       (32.3% logic, 67.7% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'M8/ALU_Ctr[2]_GND_13_o_Mux_10_o'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'M8/ALU_Ctr[2]_GND_12_o_Mux_10_o'
   Total number of paths / destination ports: 32 / 1
 -------------------------------------------------------------------------
 Offset:              5.959ns (Levels of Logic = 3)
   Source:            M8/ALU_out_31 (LATCH)
   Destination:       LED<4> (PAD)
-  Source Clock:      M8/ALU_Ctr[2]_GND_13_o_Mux_10_o falling
+  Source Clock:      M8/ALU_Ctr[2]_GND_12_o_Mux_10_o falling
 
   Data Path: M8/ALU_out_31 to LED<4>
                                 Gate     Net
@@ -1005,13 +1000,13 @@ Delay:               5.413ns (Levels of Logic = 2)
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock M8/ALU_Ctr[2]_GND_13_o_Mux_10_o
+Clock to Setup on destination clock M8/ALU_Ctr[2]_GND_12_o_Mux_10_o
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-U9/button_out_2|         |         |   19.139|         |
-clk_50mhz      |         |         |   19.305|         |
+U9/button_out_2|         |         |   17.204|         |
+clk_50mhz      |         |         |   17.867|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock U9/button_out_0
@@ -1029,7 +1024,7 @@ Clock to Setup on destination clock U9/button_out_2
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
 U9/button_out_0|    3.676|         |         |         |
-U9/button_out_2|    2.650|         |         |         |
+U9/button_out_2|    2.651|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk_50mhz
@@ -1037,21 +1032,21 @@ Clock to Setup on destination clock clk_50mhz
                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------------------+---------+---------+---------+---------+
-M8/ALU_Ctr[2]_GND_13_o_Mux_10_o|         |    2.435|         |         |
+M8/ALU_Ctr[2]_GND_12_o_Mux_10_o|         |    2.435|         |         |
 U9/button_out_0                |    2.483|         |         |         |
-U9/button_out_2                |    3.415|         |         |         |
+U9/button_out_2                |    3.435|         |         |         |
 clk_50mhz                      |    4.946|    2.982|    4.153|         |
 -------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.95 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.90 secs
  
 --> 
 
-Total memory usage is 191232 kilobytes
+Total memory usage is 191424 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  102 (   0 filtered)

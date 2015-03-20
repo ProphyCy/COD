@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-CHENYANG::  Fri Mar 20 00:08:19 2015
+CHENYANG::  Fri Mar 20 10:49:01 2015
 
 par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
 
@@ -31,11 +31,11 @@ Slice Logic Utilization:
     Number used as Latches:                     32
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        499 out of   9,112    5%
-    Number used as logic:                      497 out of   9,112    5%
-      Number using O6 output only:             379
+  Number of Slice LUTs:                        484 out of   9,112    5%
+    Number used as logic:                      482 out of   9,112    5%
+      Number using O6 output only:             356
       Number using O5 output only:              45
-      Number using O5 and O6:                   73
+      Number using O5 and O6:                   81
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   2,176    0%
     Number used exclusively as route-thrus:      2
@@ -44,12 +44,12 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   206 out of   2,278    9%
+  Number of occupied Slices:                   180 out of   2,278    7%
   Number of MUXCYs used:                        76 out of   4,556    1%
-  Number of LUT Flip Flop pairs used:          509
-    Number with an unused Flip Flop:           324 out of     509   63%
-    Number with an unused LUT:                  10 out of     509    1%
-    Number of fully used LUT-FF pairs:         175 out of     509   34%
+  Number of LUT Flip Flop pairs used:          499
+    Number with an unused Flip Flop:           314 out of     499   62%
+    Number with an unused LUT:                  15 out of     499    3%
+    Number of fully used LUT-FF pairs:         170 out of     499   34%
     Number of slice register sites lost
       to control set restrictions:               0 out of  18,224    0%
 
@@ -98,13 +98,13 @@ Finished initial Timing Analysis.  REAL time: 3 secs
 Starting Router
 
 
-Phase  1  : 2928 unrouted;      REAL time: 3 secs 
+Phase  1  : 2832 unrouted;      REAL time: 3 secs 
 
-Phase  2  : 2549 unrouted;      REAL time: 4 secs 
+Phase  2  : 2450 unrouted;      REAL time: 4 secs 
 
-Phase  3  : 1234 unrouted;      REAL time: 5 secs 
+Phase  3  : 1105 unrouted;      REAL time: 4 secs 
 
-Phase  4  : 1234 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  4  : 1105 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
 Updating file: Top.ncd with current fully routed design.
 
@@ -140,14 +140,14 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net U9/ | SETUP       |         N/A|     1.609ns|     N/A|           0
-  button_out_2_BUFG                         | HOLD        |     0.435ns|            |       0|           0
+  Autotimespec constraint for clock net U9/ | SETUP       |         N/A|     2.583ns|     N/A|           0
+  button_out_2_BUFG                         | HOLD        |     0.437ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     7.481ns|     N/A|           0
-  _50mhz_IBUF_BUFG                          | HOLD        |     0.459ns|            |       0|           0
+  Autotimespec constraint for clock net U9/ | SETUP       |         N/A|     1.217ns|     N/A|           0
+  button_out<0>                             | HOLD        |     0.544ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net U9/ | SETUP       |         N/A|     1.173ns|     N/A|           0
-  button_out<0>                             | HOLD        |     0.494ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     8.430ns|     N/A|           0
+  _50mhz_IBUF_BUFG                          | HOLD        |     0.463ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -163,10 +163,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 7 secs 
-Total CPU time to PAR completion: 7 secs 
+Total REAL time to PAR completion: 6 secs 
+Total CPU time to PAR completion: 6 secs 
 
-Peak Memory Usage:  247 MB
+Peak Memory Usage:  248 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

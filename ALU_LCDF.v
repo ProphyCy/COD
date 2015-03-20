@@ -65,7 +65,7 @@ module ALU_LCDF(Ai,
 			end
 			6:
 			begin
-				ALU_out <= Ai >> Bi;
+				ALU_out <= Ai >> Bi[10:6];
 			end
 			7:
 			begin
