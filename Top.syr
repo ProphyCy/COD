@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: Top.prj
 
@@ -116,8 +116,10 @@ Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\adder_32bi
 Parsing module <adder_32bits>.
 Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\SignalExt_32.v" into library work
 Parsing module <SignalExt_32>.
-Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\Output_2_Disp.v" into library work
-Parsing module <Output_2_Disp>.
+Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\seven_seg_Dev_IO.v" into library work
+Parsing module <seven_seg_Dev_IO>.
+Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\seven_seg_dev.v" into library work
+Parsing module <seven_seg_dev>.
 Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\or_bit_32.v" into library work
 Parsing module <or_bit_32>.
 Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\LED_DEV.v" into library work
@@ -130,8 +132,6 @@ Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2_32
 Parsing module <Input_2_32bit>.
 Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\Ext_32.v" into library work
 Parsing module <Ext_32>.
-Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\Display.v" into library work
-Parsing module <Display>.
 Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\clk_div.v" into library work
 Parsing module <clk_div>.
 Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\Anti_jitter.v" into library work
@@ -150,8 +150,6 @@ Elaborating module <Top>.
 Elaborating module <SignalExt_32>.
 
 Elaborating module <Ext_32>.
-
-Elaborating module <Display>.
 
 Elaborating module <Input_2_32bit>.
 WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2_32bit.v" Line 37: Result of 32-bit expression is truncated to fit in 2-bit target.
@@ -173,8 +171,6 @@ WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2
 WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2_32bit.v" Line 121: Result of 5-bit expression is truncated to fit in 4-bit target.
 WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2_32bit.v" Line 125: Result of 5-bit expression is truncated to fit in 4-bit target.
 
-Elaborating module <Output_2_Disp>.
-
 Elaborating module <LED_DEV>.
 
 Elaborating module <ALU_LCDF>.
@@ -192,6 +188,10 @@ WARNING:HDLCompiler:1499 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\ipcore
 Elaborating module <RAM_B>.
 WARNING:HDLCompiler:1499 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\ipcore_dir\RAM_B.v" Line 39: Empty module <RAM_B> remains a black box.
 
+Elaborating module <seven_seg_Dev_IO>.
+
+Elaborating module <seven_seg_dev>.
+
 Elaborating module <clk_div>.
 
 Elaborating module <Anti_jitter>.
@@ -203,8 +203,7 @@ Elaborating module <VCC>.
 Elaborating module <INV>.
 
 Elaborating module <or_bit_32>.
-WARNING:HDLCompiler:552 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Top.vf" Line 76: Input port EN is not connected on this instance
-WARNING:HDLCompiler:552 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Top.vf" Line 97: Input port clk is not connected on this instance
+WARNING:HDLCompiler:552 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Top.vf" Line 68: Input port clk is not connected on this instance
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -212,13 +211,11 @@ WARNING:HDLCompiler:552 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Top.vf"
 
 Synthesizing Unit <Top>.
     Related source file is "C:\Users\Young\Desktop\Verilog Project\COD-P1\Top.vf".
-WARNING:Xst:2898 - Port 'EN', unconnected in block instance 'M5', is tied to GND.
-WARNING:Xst:2898 - Port 'rst', unconnected in block instance 'M5', is tied to GND.
 WARNING:Xst:2898 - Port 'clk', unconnected in block instance 'M6', is tied to GND.
 WARNING:Xst:2898 - Port 'EN', unconnected in block instance 'M6', is tied to GND.
 WARNING:Xst:2898 - Port 'rst', unconnected in block instance 'M6', is tied to GND.
-INFO:Xst:3210 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Top.vf" line 70: Output port <state> of the instance <M4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Top.vf" line 97: Output port <Other_out> of the instance <M6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Top.vf" line 62: Output port <state> of the instance <M4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Top.vf" line 68: Output port <Other_out> of the instance <M6> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Top.vf" line 123: Output port <button_pulse> of the instance <U9> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
@@ -236,47 +233,35 @@ Synthesizing Unit <Ext_32>.
 	no macro.
 Unit <Ext_32> synthesized.
 
-Synthesizing Unit <Display>.
-    Related source file is "C:\Users\Young\Desktop\Verilog Project\COD-P1\Display.v".
-    Found 8-bit 4-to-1 multiplexer for signal <temp_seg> created at line 47.
-    Found 1-bit 4-to-1 multiplexer for signal <Dp> created at line 61.
-    Found 1-bit 4-to-1 multiplexer for signal <digit<3>> created at line 73.
-    Found 1-bit 4-to-1 multiplexer for signal <digit<2>> created at line 73.
-    Found 1-bit 4-to-1 multiplexer for signal <digit<1>> created at line 73.
-    Found 1-bit 4-to-1 multiplexer for signal <digit<0>> created at line 73.
-    Summary:
-	inferred  23 Multiplexer(s).
-Unit <Display> synthesized.
-
 Synthesizing Unit <Input_2_32bit>.
     Related source file is "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2_32bit.v".
 WARNING:Xst:647 - Input <disp_ctr<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 32-bit register for signal <Ai>.
     Found 32-bit register for signal <Bi>.
     Found 2-bit register for signal <state>.
-    Found 2-bit adder for signal <state[1]_GND_5_o_add_3_OUT> created at line 38.
-    Found 4-bit adder for signal <Ai[3]_GND_5_o_add_12_OUT> created at line 59.
-    Found 4-bit adder for signal <Ai[7]_GND_5_o_add_13_OUT> created at line 63.
-    Found 4-bit adder for signal <Ai[11]_GND_5_o_add_14_OUT> created at line 67.
-    Found 4-bit adder for signal <Ai[15]_GND_5_o_add_15_OUT> created at line 71.
-    Found 4-bit adder for signal <Ai[19]_GND_5_o_add_16_OUT> created at line 75.
-    Found 4-bit adder for signal <Ai[23]_GND_5_o_add_17_OUT> created at line 79.
-    Found 4-bit adder for signal <Ai[27]_GND_5_o_add_18_OUT> created at line 83.
-    Found 4-bit adder for signal <Ai[31]_GND_5_o_add_19_OUT> created at line 87.
-    Found 4-bit adder for signal <Bi[3]_GND_5_o_add_22_OUT> created at line 97.
-    Found 4-bit adder for signal <Bi[7]_GND_5_o_add_23_OUT> created at line 101.
-    Found 4-bit adder for signal <Bi[11]_GND_5_o_add_24_OUT> created at line 105.
-    Found 4-bit adder for signal <Bi[15]_GND_5_o_add_25_OUT> created at line 109.
-    Found 4-bit adder for signal <Bi[19]_GND_5_o_add_26_OUT> created at line 113.
-    Found 4-bit adder for signal <Bi[23]_GND_5_o_add_27_OUT> created at line 117.
-    Found 4-bit adder for signal <Bi[27]_GND_5_o_add_28_OUT> created at line 121.
-    Found 4-bit adder for signal <Bi[31]_GND_5_o_add_29_OUT> created at line 125.
-    Found 2-bit subtractor for signal <GND_5_o_GND_5_o_sub_3_OUT<1:0>> created at line 37.
-    Found 4x4-bit Read Only RAM for signal <state[1]_PWR_5_o_wide_mux_8_OUT>
+    Found 2-bit adder for signal <state[1]_GND_4_o_add_3_OUT> created at line 38.
+    Found 4-bit adder for signal <Ai[3]_GND_4_o_add_12_OUT> created at line 59.
+    Found 4-bit adder for signal <Ai[7]_GND_4_o_add_13_OUT> created at line 63.
+    Found 4-bit adder for signal <Ai[11]_GND_4_o_add_14_OUT> created at line 67.
+    Found 4-bit adder for signal <Ai[15]_GND_4_o_add_15_OUT> created at line 71.
+    Found 4-bit adder for signal <Ai[19]_GND_4_o_add_16_OUT> created at line 75.
+    Found 4-bit adder for signal <Ai[23]_GND_4_o_add_17_OUT> created at line 79.
+    Found 4-bit adder for signal <Ai[27]_GND_4_o_add_18_OUT> created at line 83.
+    Found 4-bit adder for signal <Ai[31]_GND_4_o_add_19_OUT> created at line 87.
+    Found 4-bit adder for signal <Bi[3]_GND_4_o_add_22_OUT> created at line 97.
+    Found 4-bit adder for signal <Bi[7]_GND_4_o_add_23_OUT> created at line 101.
+    Found 4-bit adder for signal <Bi[11]_GND_4_o_add_24_OUT> created at line 105.
+    Found 4-bit adder for signal <Bi[15]_GND_4_o_add_25_OUT> created at line 109.
+    Found 4-bit adder for signal <Bi[19]_GND_4_o_add_26_OUT> created at line 113.
+    Found 4-bit adder for signal <Bi[23]_GND_4_o_add_27_OUT> created at line 117.
+    Found 4-bit adder for signal <Bi[27]_GND_4_o_add_28_OUT> created at line 121.
+    Found 4-bit adder for signal <Bi[31]_GND_4_o_add_29_OUT> created at line 125.
+    Found 2-bit subtractor for signal <GND_4_o_GND_4_o_sub_3_OUT<1:0>> created at line 37.
+    Found 4x4-bit Read Only RAM for signal <state[1]_PWR_4_o_wide_mux_8_OUT>
     Found 32-bit 8-to-1 multiplexer for signal <disp_ctr[1]_Ai[31]_wide_mux_20_OUT> created at line 56.
     Found 32-bit 8-to-1 multiplexer for signal <disp_ctr[1]_Bi[31]_wide_mux_30_OUT> created at line 94.
     Found 3-bit comparator greater for signal <n0000> created at line 35
-    Found 3-bit comparator greater for signal <disp_ctr[4]_GND_5_o_LessThan_8_o> created at line 43
+    Found 3-bit comparator greater for signal <disp_ctr[4]_GND_4_o_LessThan_8_o> created at line 43
     Summary:
 	inferred   1 RAM(s).
 	inferred  17 Adder/Subtractor(s).
@@ -284,23 +269,6 @@ WARNING:Xst:647 - Input <disp_ctr<0:0>> is never used. This port will be preserv
 	inferred   2 Comparator(s).
 	inferred   3 Multiplexer(s).
 Unit <Input_2_32bit> synthesized.
-
-Synthesizing Unit <Output_2_Disp>.
-    Related source file is "C:\Users\Young\Desktop\Verilog Project\COD-P1\Output_2_Disp.v".
-WARNING:Xst:647 - Input <blink_in<15:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <blink_in<31:20>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <point_in<15:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <point_in<31:20>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <EN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 4-bit register for signal <blink_out>.
-    Found 32-bit register for signal <Disp_num>.
-    Found 4-bit register for signal <point_out>.
-    Found 32-bit 8-to-1 multiplexer for signal <Disp_sel[2]_Disp7[31]_wide_mux_1_OUT> created at line 60.
-    Summary:
-	inferred  40 D-type flip-flop(s).
-	inferred   6 Multiplexer(s).
-Unit <Output_2_Disp> synthesized.
 
 Synthesizing Unit <LED_DEV>.
     Related source file is "C:\Users\Young\Desktop\Verilog Project\COD-P1\LED_DEV.v".
@@ -404,6 +372,33 @@ Synthesizing Unit <adder_1bit>.
     Summary:
 Unit <adder_1bit> synthesized.
 
+Synthesizing Unit <seven_seg_Dev_IO>.
+    Related source file is "C:\Users\Young\Desktop\Verilog Project\COD-P1\seven_seg_Dev_IO.v".
+WARNING:Xst:647 - Input <blink_in<15:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <blink_in<31:20>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <point_in<15:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <point_in<31:20>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit register for signal <point_out>.
+    Found 4-bit register for signal <blink_out>.
+    Found 32-bit register for signal <Disp_num>.
+    Found 32-bit 8-to-1 multiplexer for signal <Test[2]_Test_data7[31]_wide_mux_3_OUT> created at line 66.
+    Summary:
+	inferred  40 D-type flip-flop(s).
+	inferred  14 Multiplexer(s).
+Unit <seven_seg_Dev_IO> synthesized.
+
+Synthesizing Unit <seven_seg_dev>.
+    Related source file is "C:\Users\Young\Desktop\Verilog Project\COD-P1\seven_seg_dev.v".
+    Found 8-bit 4-to-1 multiplexer for signal <temp_seg> created at line 47.
+    Found 1-bit 4-to-1 multiplexer for signal <Dp> created at line 73.
+    Found 1-bit 4-to-1 multiplexer for signal <digit<3>> created at line 85.
+    Found 1-bit 4-to-1 multiplexer for signal <digit<2>> created at line 85.
+    Found 1-bit 4-to-1 multiplexer for signal <digit<1>> created at line 85.
+    Found 1-bit 4-to-1 multiplexer for signal <digit<0>> created at line 85.
+    Summary:
+	inferred  23 Multiplexer(s).
+Unit <seven_seg_dev> synthesized.
+
 Synthesizing Unit <clk_div>.
     Related source file is "C:\Users\Young\Desktop\Verilog Project\COD-P1\clk_div.v".
     Found 1-bit register for signal <Clk_CPU>.
@@ -463,12 +458,13 @@ Macro Statistics
  32-bit comparator greater                             : 2
  4-bit comparator not equal                            : 1
  8-bit comparator not equal                            : 1
-# Multiplexers                                         : 65
+# Multiplexers                                         : 73
  1-bit 2-to-1 multiplexer                              : 17
  1-bit 4-to-1 multiplexer                              : 5
  1-bit 7-to-1 multiplexer                              : 32
+ 32-bit 2-to-1 multiplexer                             : 2
  32-bit 8-to-1 multiplexer                             : 3
- 4-bit 2-to-1 multiplexer                              : 6
+ 4-bit 2-to-1 multiplexer                              : 12
  8-bit 2-to-1 multiplexer                              : 1
  8-bit 4-to-1 multiplexer                              : 1
 # Logic shifters                                       : 1
@@ -499,7 +495,7 @@ Unit <Anti_jitter> synthesized (advanced).
 
 Synthesizing (advanced) Unit <Input_2_32bit>.
 The following registers are absorbed into counter <state>: 1 register on signal <state>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_state[1]_PWR_5_o_wide_mux_8_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_state[1]_PWR_4_o_wide_mux_8_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -534,12 +530,13 @@ Macro Statistics
  32-bit comparator greater                             : 2
  4-bit comparator not equal                            : 1
  8-bit comparator not equal                            : 1
-# Multiplexers                                         : 64
- 1-bit 2-to-1 multiplexer                              : 16
+# Multiplexers                                         : 106
+ 1-bit 2-to-1 multiplexer                              : 52
  1-bit 4-to-1 multiplexer                              : 5
  1-bit 7-to-1 multiplexer                              : 32
+ 32-bit 2-to-1 multiplexer                             : 1
  32-bit 8-to-1 multiplexer                             : 3
- 4-bit 2-to-1 multiplexer                              : 6
+ 4-bit 2-to-1 multiplexer                              : 11
  8-bit 2-to-1 multiplexer                              : 1
  8-bit 4-to-1 multiplexer                              : 1
 # Logic shifters                                       : 1
@@ -553,22 +550,22 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-INFO:Xst:2261 - The FF/Latch <point_out_0> in Unit <Output_2_Disp> is equivalent to the following 3 FFs/Latches, which will be removed : <point_out_1> <point_out_2> <point_out_3> 
+INFO:Xst:2261 - The FF/Latch <point_out_0> in Unit <seven_seg_Dev_IO> is equivalent to the following 3 FFs/Latches, which will be removed : <point_out_1> <point_out_2> <point_out_3> 
 
 Optimizing unit <Top> ...
 
 Optimizing unit <Anti_jitter> ...
 
-Optimizing unit <Output_2_Disp> ...
+Optimizing unit <seven_seg_Dev_IO> ...
 
 Optimizing unit <ALU_LCDF> ...
 
 Optimizing unit <adder_8bits> ...
 
-Optimizing unit <Display> ...
+Optimizing unit <seven_seg_dev> ...
 
 Optimizing unit <Input_2_32bit> ...
-WARNING:Xst:1710 - FF/Latch <M5/point_out_0> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <U5/point_out_0> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <U9/pluse> of sequential type is unconnected in block <Top>.
 WARNING:Xst:2677 - Node <U9/SW_OK_7> of sequential type is unconnected in block <Top>.
 WARNING:Xst:2677 - Node <U9/SW_OK_6> of sequential type is unconnected in block <Top>.
@@ -636,15 +633,15 @@ Primitive and Black Box Usage:
 #      LUT2                        : 9
 #      LUT3                        : 60
 #      LUT4                        : 107
-#      LUT5                        : 152
-#      LUT6                        : 214
+#      LUT5                        : 136
+#      LUT6                        : 230
 #      MUXCY                       : 68
 #      MUXF7                       : 17
 #      VCC                         : 2
 #      XORCY                       : 49
 # FlipFlops/Latches                : 203
-#      FD                          : 49
-#      FDE                         : 73
+#      FD                          : 45
+#      FDE                         : 77
 #      FDR                         : 32
 #      FDRE                        : 17
 #      LD                          : 32
@@ -672,7 +669,7 @@ Slice Logic Distribution:
    Number with an unused Flip Flop:     405  out of    608    66%  
    Number with an unused LUT:            14  out of    608     2%  
    Number of fully used LUT-FF pairs:   189  out of    608    31%  
-   Number of unique control sets:         8
+   Number of unique control sets:         9
 
 IO Utilization: 
  Number of IOs:                          33
@@ -705,7 +702,7 @@ Clock Information:
 Clock Signal                                                       | Clock buffer(FF name)                                                                                                         | Load  |
 -------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+-------+
 clk_50mhz                                                          | IBUF+BUFG                                                                                                                     | 107   |
-M8/ALU_Ctr[2]_GND_12_o_Mux_10_o(M8/ALU_Ctr[2]_GND_12_o_Mux_10_o1:O)| BUFG(*)(M8/ALU_out_1)                                                                                                         | 32    |
+M8/ALU_Ctr[2]_GND_10_o_Mux_10_o(M8/ALU_Ctr[2]_GND_10_o_Mux_10_o1:O)| BUFG(*)(M8/ALU_out_1)                                                                                                         | 32    |
 U9/button_out_0                                                    | NONE(M4/state_1)                                                                                                              | 2     |
 U9/button_out_2                                                    | BUFG                                                                                                                          | 64    |
 U3/N1                                                              | NONE(U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram)| 2     |
@@ -723,9 +720,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 8.306ns (Maximum Frequency: 120.393MHz)
-   Minimum input arrival time before clock: 6.213ns
-   Maximum output required time after clock: 20.064ns
+   Minimum period: 8.429ns (Maximum Frequency: 118.645MHz)
+   Minimum input arrival time before clock: 6.403ns
+   Maximum output required time after clock: 19.958ns
    Maximum combinational path delay: 5.413ns
 
 Timing Details:
@@ -734,10 +731,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_50mhz'
-  Clock period: 8.306ns (frequency: 120.393MHz)
-  Total number of paths / destination ports: 1913 / 171
+  Clock period: 8.429ns (frequency: 118.645MHz)
+  Total number of paths / destination ports: 1992 / 171
 -------------------------------------------------------------------------
-Delay:               4.153ns (Levels of Logic = 4)
+Delay:               4.214ns (Levels of Logic = 4)
   Source:            U8/clkdiv_24 (FF)
   Destination:       U3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram (RAM)
   Source Clock:      clk_50mhz rising
@@ -750,13 +747,13 @@ Delay:               4.153ns (Levels of Logic = 4)
      FDR:C->Q             39   0.447   1.736  U8/clkdiv_24 (U8/clkdiv_24)
      begin scope: 'U2:a<0>'
      LUT5:I0->O            1   0.203   0.580  spo<4>_SW0 (N0)
-     LUT6:I5->O            4   0.205   0.683  spo<4> (spo<0>)
+     LUT6:I5->O            6   0.205   0.744  spo<4> (spo<0>)
      end scope: 'U2:spo<0>'
      begin scope: 'U3:dina<0>'
      RAMB16BWER:DIA0           0.300          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram
     ----------------------------------------
-    Total                      4.153ns (1.155ns logic, 2.998ns route)
-                                       (27.8% logic, 72.2% route)
+    Total                      4.214ns (1.155ns logic, 3.059ns route)
+                                       (27.4% logic, 72.6% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'U9/button_out_0'
@@ -804,34 +801,37 @@ Delay:               2.651ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_50mhz'
-  Total number of paths / destination ports: 798 / 114
+  Total number of paths / destination ports: 830 / 114
 -------------------------------------------------------------------------
-Offset:              6.213ns (Levels of Logic = 4)
-  Source:            SW<1> (PAD)
-  Destination:       U9/counter_16 (FF)
+Offset:              6.403ns (Levels of Logic = 6)
+  Source:            SW<3> (PAD)
+  Destination:       U5/Disp_num_6 (FF)
   Destination Clock: clk_50mhz rising
 
-  Data Path: SW<1> to U9/counter_16
+  Data Path: SW<3> to U5/Disp_num_6
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            61   1.222   1.725  SW_1_IBUF (SW_1_IBUF)
-     LUT4:I2->O            1   0.203   0.580  U9/btn_temp[3]_sw_temp[7]_OR_51_o1 (U9/btn_temp[3]_sw_temp[7]_OR_51_o1)
-     LUT5:I4->O            2   0.205   0.617  U9/btn_temp[3]_sw_temp[7]_OR_51_o2 (U9/btn_temp[3]_sw_temp[7]_OR_51_o2)
-     LUT5:I4->O           17   0.205   1.027  U9/btn_temp[3]_sw_temp[7]_OR_51_o7 (U9/btn_temp[3]_sw_temp[7]_OR_51_o)
-     FDRE:R                    0.430          U9/counter_0
+     IBUF:I->O            82   1.222   2.103  SW_3_IBUF (SW_3_IBUF)
+     begin scope: 'U2:a<4>'
+     LUT5:I0->O            1   0.203   0.580  U0/xst_options.dist_mem_inst/gen_rom.rom_inst/Mram_spo_int311_SW0 (N2)
+     LUT6:I5->O            3   0.205   0.755  U0/xst_options.dist_mem_inst/gen_rom.rom_inst/Mram_spo_int311 (spo<1>)
+     end scope: 'U2:spo<1>'
+     LUT4:I2->O            1   0.203   0.827  U5/Mmux_Test[2]_PWR_45_o_mux_6_OUT121_SW1 (N39)
+     LUT6:I2->O            1   0.203   0.000  U5/Mmux_Test[2]_PWR_45_o_mux_6_OUT123 (U5/Test[2]_PWR_45_o_mux_6_OUT<1>)
+     FD:D                      0.102          U5/Disp_num_1
     ----------------------------------------
-    Total                      6.213ns (2.265ns logic, 3.948ns route)
-                                       (36.5% logic, 63.5% route)
+    Total                      6.403ns (2.138ns logic, 4.265ns route)
+                                       (33.4% logic, 66.6% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'M8/ALU_Ctr[2]_GND_12_o_Mux_10_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'M8/ALU_Ctr[2]_GND_10_o_Mux_10_o'
   Total number of paths / destination ports: 169 / 32
 -------------------------------------------------------------------------
 Offset:              5.075ns (Levels of Logic = 4)
   Source:            SW<4> (PAD)
   Destination:       M8/ALU_out_25 (LATCH)
-  Destination Clock: M8/ALU_Ctr[2]_GND_12_o_Mux_10_o falling
+  Destination Clock: M8/ALU_Ctr[2]_GND_10_o_Mux_10_o falling
 
   Data Path: SW<4> to M8/ALU_out_25
                                 Gate     Net
@@ -860,7 +860,7 @@ Offset:              4.286ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            91   1.222   1.922  SW_6_IBUF (SW_6_IBUF)
-     LUT2:I0->O            2   0.203   0.616  M4/n0000_inv1 (M4/n0000_inv)
+     LUT2:I0->O            2   0.203   0.616  U5/Mmux_Test[2]_GND_44_o_wide_mux_5_OUT131 (M4/n0000_inv)
      FDE:CE                    0.322          M4/state_0
     ----------------------------------------
     Total                      4.286ns (1.747ns logic, 2.539ns route)
@@ -870,7 +870,7 @@ Offset:              4.286ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'U9/button_out_2'
   Total number of paths / destination ports: 256 / 128
 -------------------------------------------------------------------------
-Offset:              5.093ns (Levels of Logic = 2)
+Offset:              4.988ns (Levels of Logic = 2)
   Source:            SW<7> (PAD)
   Destination:       M4/Ai_31 (FF)
   Destination Clock: U9/button_out_2 rising
@@ -879,18 +879,18 @@ Offset:              5.093ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            92   1.222   2.053  SW_7_IBUF (SW_7_IBUF)
-     LUT3:I0->O           32   0.205   1.291  M4/disp_ctr[4]_GND_5_o_equal_12_o<4>1 (M4/disp_ctr[4]_GND_5_o_equal_12_o)
+     IBUF:I->O            76   1.222   1.947  SW_7_IBUF (SW_7_IBUF)
+     LUT3:I0->O           32   0.205   1.291  M4/disp_ctr[4]_GND_4_o_equal_12_o<4>1 (M4/disp_ctr[4]_GND_4_o_equal_12_o)
      FDE:CE                    0.322          M4/Ai_0
     ----------------------------------------
-    Total                      5.093ns (1.749ns logic, 3.344ns route)
-                                       (34.3% logic, 65.7% route)
+    Total                      4.988ns (1.749ns logic, 3.239ns route)
+                                       (35.1% logic, 64.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_50mhz'
   Total number of paths / destination ports: 457 / 18
 -------------------------------------------------------------------------
-Offset:              20.064ns (Levels of Logic = 17)
+Offset:              19.958ns (Levels of Logic = 17)
   Source:            U9/button_out_0 (FF)
   Destination:       LED<5> (PAD)
   Source Clock:      clk_50mhz rising
@@ -899,7 +899,7 @@ Offset:              20.064ns (Levels of Logic = 17)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             67   0.447   1.888  U9/button_out_0 (U9/button_out_0)
+     FDE:C->Q             51   0.447   1.783  U9/button_out_0 (U9/button_out_0)
      LUT5:I2->O            3   0.205   0.755  M8/A32/A8_1/A2/out1 (M8/A32/A8_1/carry<1>)
      LUT6:I4->O            3   0.203   0.755  M8/A32/A8_1/A4/out1 (M8/A32/A8_1/carry<3>)
      LUT6:I4->O            3   0.203   0.755  M8/A32/A8_1/A6/out1 (M8/A32/A8_1/carry<5>)
@@ -918,8 +918,8 @@ Offset:              20.064ns (Levels of Logic = 17)
      LUT6:I4->O            1   0.203   0.579  M8/A32/A8_4/A8/out1 (Cout)
      OBUF:I->O                 2.571          LED_5_OBUF (LED<5>)
     ----------------------------------------
-    Total                     20.064ns (6.268ns logic, 13.796ns route)
-                                       (31.2% logic, 68.8% route)
+    Total                     19.958ns (6.268ns logic, 13.690ns route)
+                                       (31.4% logic, 68.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'U9/button_out_2'
@@ -957,13 +957,13 @@ Offset:              19.401ns (Levels of Logic = 17)
                                        (32.3% logic, 67.7% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'M8/ALU_Ctr[2]_GND_12_o_Mux_10_o'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'M8/ALU_Ctr[2]_GND_10_o_Mux_10_o'
   Total number of paths / destination ports: 32 / 1
 -------------------------------------------------------------------------
 Offset:              5.959ns (Levels of Logic = 3)
   Source:            M8/ALU_out_31 (LATCH)
   Destination:       LED<4> (PAD)
-  Source Clock:      M8/ALU_Ctr[2]_GND_12_o_Mux_10_o falling
+  Source Clock:      M8/ALU_Ctr[2]_GND_10_o_Mux_10_o falling
 
   Data Path: M8/ALU_out_31 to LED<4>
                                 Gate     Net
@@ -1000,13 +1000,13 @@ Delay:               5.413ns (Levels of Logic = 2)
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock M8/ALU_Ctr[2]_GND_12_o_Mux_10_o
+Clock to Setup on destination clock M8/ALU_Ctr[2]_GND_10_o_Mux_10_o
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
 U9/button_out_2|         |         |   17.204|         |
-clk_50mhz      |         |         |   17.867|         |
+clk_50mhz      |         |         |   17.761|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock U9/button_out_0
@@ -1032,23 +1032,23 @@ Clock to Setup on destination clock clk_50mhz
                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------------------+---------+---------+---------+---------+
-M8/ALU_Ctr[2]_GND_12_o_Mux_10_o|         |    2.435|         |         |
-U9/button_out_0                |    2.483|         |         |         |
-U9/button_out_2                |    3.435|         |         |         |
-clk_50mhz                      |    4.946|    2.982|    4.153|         |
+M8/ALU_Ctr[2]_GND_10_o_Mux_10_o|         |    2.435|         |         |
+U9/button_out_0                |    2.626|         |         |         |
+U9/button_out_2                |    3.423|         |         |         |
+clk_50mhz                      |    5.354|    3.079|    4.214|         |
 -------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.90 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.89 secs
  
 --> 
 
-Total memory usage is 191424 kilobytes
+Total memory usage is 191032 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  102 (   0 filtered)
+Number of warnings :   97 (   0 filtered)
 Number of infos    :    6 (   0 filtered)
 

@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Top.vf
-// /___/   /\     Timestamp : 03/19/2015 23:36:22
+// /___/   /\     Timestamp : 03/22/2015 19:39:48
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -59,41 +59,12 @@ module Top(BTN,
                            .So(XLXN_207[31:0]));
    Ext_32  Ext32 (.imm_16(ALU_out[15:0]), 
                  .Imm_32(XLXN_192[31:0]));
-   Display  M3 (.blinking(XLXN_18[3:0]), 
-               .disp_num(XLXN_53[31:0]), 
-               .flash_clk(clkdiv[24]), 
-               .pointing(XLXN_17[3:0]), 
-               .Scanning(clkdiv[19:18]), 
-               .SW(SW_OK[1:0]), 
-               .AN(AN[3:0]), 
-               .SEGMENT(SEGMENT[7:0]));
    Input_2_32bit  M4 (.disp_ctr({SW[7:5], SW[1:0]}), 
                      .push_out(button_out[2:0]), 
                      .Ai(XLXN_163[31:0]), 
                      .Bi(XLXN_164[31:0]), 
                      .blinke(blinke[3:0]), 
                      .state());
-   Output_2_Disp  M5 (.blink_in({N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, 
-         N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, blinke[3:0], 
-         blinke[3:0]}), 
-                     .clk(clk_50mhz), 
-                     .Disp_sel(SW[7:5]), 
-                     .Disp0(XLXN_163[31:0]), 
-                     .Disp1(XLXN_164[31:0]), 
-                     .Disp2(ALU_out[31:0]), 
-                     .Disp3(XLXN_192[31:0]), 
-                     .Disp4(XLXN_207[31:0]), 
-                     .Disp5(clkdiv[31:0]), 
-                     .Disp6(XLXN_201[31:0]), 
-                     .Disp7(XLXN_202[31:0]), 
-                     .EN(), 
-                     .point_in({V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, 
-         V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, 
-         V5, V5, V5}), 
-                     .rst(), 
-                     .blink_out(XLXN_18[3:0]), 
-                     .Disp_num(XLXN_53[31:0]), 
-                     .point_out(XLXN_17[3:0]));
    LED_DEV  M6 (.clk(), 
                .Data_in({N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, 
          N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, SW[1], CPU_CLK, Cout, 
@@ -115,6 +86,35 @@ module Top(BTN,
              .dina(XLXN_201[31:0]), 
              .wea(SW_OK[4]), 
              .douta(XLXN_202[31:0]));
+   seven_seg_Dev_IO  U5 (.blink_in({N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, 
+         N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, blinke[3:0], 
+         blinke[3:0]}), 
+                        .clk(clk_50mhz), 
+                        .disp_cpudata(XLXN_163[31:0]), 
+                        .GPIOe0000000_we(V5), 
+                        .point_in({V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, 
+         V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, V5, 
+         V5, V5, V5, V5}), 
+                        .rst(N0), 
+                        .Test(SW[7:5]), 
+                        .Test_data1(XLXN_164[31:0]), 
+                        .Test_data2(ALU_out[31:0]), 
+                        .Test_data3(XLXN_192[31:0]), 
+                        .Test_data4(XLXN_207[31:0]), 
+                        .Test_data5(clkdiv[31:0]), 
+                        .Test_data6(XLXN_201[31:0]), 
+                        .Test_data7(XLXN_202[31:0]), 
+                        .blink_out(XLXN_18[3:0]), 
+                        .Disp_num(XLXN_53[31:0]), 
+                        .point_out(XLXN_17[3:0]));
+   seven_seg_dev  U6 (.blinking(XLXN_18[3:0]), 
+                     .disp_num(XLXN_53[31:0]), 
+                     .flash_clk(clkdiv[24]), 
+                     .pointing(XLXN_17[3:0]), 
+                     .Scanning(clkdiv[19:18]), 
+                     .SW(SW_OK[1:0]), 
+                     .AN(AN[3:0]), 
+                     .SEGMENT(SEGMENT[7:0]));
    clk_div  U8 (.clk(clk_50mhz), 
                .rst(N0), 
                .SW2(SW_OK[2]), 

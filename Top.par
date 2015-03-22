@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-CHENYANG::  Fri Mar 20 10:49:01 2015
+CHENYANG::  Sun Mar 22 19:40:16 2015
 
 par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
 
@@ -31,11 +31,11 @@ Slice Logic Utilization:
     Number used as Latches:                     32
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        484 out of   9,112    5%
-    Number used as logic:                      482 out of   9,112    5%
-      Number using O6 output only:             356
+  Number of Slice LUTs:                        469 out of   9,112    5%
+    Number used as logic:                      467 out of   9,112    5%
+      Number using O6 output only:             326
       Number using O5 output only:              45
-      Number using O5 and O6:                   81
+      Number using O5 and O6:                   96
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   2,176    0%
     Number used exclusively as route-thrus:      2
@@ -44,12 +44,12 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   180 out of   2,278    7%
+  Number of occupied Slices:                   193 out of   2,278    8%
   Number of MUXCYs used:                        76 out of   4,556    1%
-  Number of LUT Flip Flop pairs used:          499
-    Number with an unused Flip Flop:           314 out of     499   62%
-    Number with an unused LUT:                  15 out of     499    3%
-    Number of fully used LUT-FF pairs:         170 out of     499   34%
+  Number of LUT Flip Flop pairs used:          485
+    Number with an unused Flip Flop:           300 out of     485   61%
+    Number with an unused LUT:                  16 out of     485    3%
+    Number of fully used LUT-FF pairs:         169 out of     485   34%
     Number of slice register sites lost
       to control set restrictions:               0 out of  18,224    0%
 
@@ -98,29 +98,29 @@ Finished initial Timing Analysis.  REAL time: 3 secs
 Starting Router
 
 
-Phase  1  : 2832 unrouted;      REAL time: 3 secs 
+Phase  1  : 2825 unrouted;      REAL time: 4 secs 
 
-Phase  2  : 2450 unrouted;      REAL time: 4 secs 
+Phase  2  : 2414 unrouted;      REAL time: 4 secs 
 
-Phase  3  : 1105 unrouted;      REAL time: 4 secs 
+Phase  3  : 1086 unrouted;      REAL time: 5 secs 
 
-Phase  4  : 1105 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  4  : 1086 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
 Updating file: Top.ncd with current fully routed design.
 
 Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
-Total REAL time to Router completion: 6 secs 
-Total CPU time to Router completion: 6 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Total REAL time to Router completion: 7 secs 
+Total CPU time to Router completion: 7 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -131,7 +131,7 @@ Partition Implementation Status
 
 Generating "PAR" statistics.
 INFO:Par:459 - The Clock Report is not displayed in the non timing-driven mode.
-Timing Score: 0 (Setup: 0, Hold: 0)
+Timing Score: 2762 (Setup: 2762, Hold: 0)
 
 Asterisk (*) preceding a constraint indicates it was not met.
    This may be due to a setup or hold violation.
@@ -140,18 +140,18 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net U9/ | SETUP       |         N/A|     2.583ns|     N/A|           0
-  button_out_2_BUFG                         | HOLD        |     0.437ns|            |       0|           0
+  Autotimespec constraint for clock net U9/ | SETUP       |         N/A|     1.639ns|     N/A|           0
+  button_out_2_BUFG                         | HOLD        |     0.421ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net U9/ | SETUP       |         N/A|     1.217ns|     N/A|           0
-  button_out<0>                             | HOLD        |     0.544ns|            |       0|           0
+  Autotimespec constraint for clock net U9/ | SETUP       |         N/A|     1.163ns|     N/A|           0
+  button_out<0>                             | HOLD        |     0.445ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     8.430ns|     N/A|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     9.208ns|     N/A|        2762
   _50mhz_IBUF_BUFG                          | HOLD        |     0.463ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
-All constraints were met.
+1 constraint not met.
 INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
    constraint is not analyzed due to the following: No paths covered by this 
    constraint; Other constraints intersect with this constraint; or This 
@@ -163,8 +163,8 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 6 secs 
-Total CPU time to PAR completion: 6 secs 
+Total REAL time to PAR completion: 7 secs 
+Total CPU time to PAR completion: 7 secs 
 
 Peak Memory Usage:  248 MB
 
