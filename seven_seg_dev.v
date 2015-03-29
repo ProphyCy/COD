@@ -82,7 +82,7 @@ module seven_seg_dev(blinking,
 	
 	
 	always @* begin
-		case (digit)
+		case (digit)zui
 				4'b0000 : digit_seg <= 8'b11000000; 
 				4'b0001 : digit_seg <= 8'b11111001; 
 				4'b0010 : digit_seg <= 8'b10100100;
