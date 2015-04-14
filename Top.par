@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-CHENYANG::  Sun Mar 22 19:40:16 2015
+CHENYANG::  Tue Apr 14 09:06:41 2015
 
 par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
 
@@ -98,7 +98,7 @@ Finished initial Timing Analysis.  REAL time: 3 secs
 Starting Router
 
 
-Phase  1  : 2825 unrouted;      REAL time: 4 secs 
+Phase  1  : 2825 unrouted;      REAL time: 3 secs 
 
 Phase  2  : 2414 unrouted;      REAL time: 4 secs 
 
@@ -120,7 +120,7 @@ Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 7
 
 Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 Total REAL time to Router completion: 7 secs 
-Total CPU time to Router completion: 7 secs 
+Total CPU time to Router completion: 6 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -166,7 +166,7 @@ All signals are completely routed.
 Total REAL time to PAR completion: 7 secs 
 Total CPU time to PAR completion: 7 secs 
 
-Peak Memory Usage:  248 MB
+Peak Memory Usage:  257 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

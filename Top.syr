@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: Top.prj
 
@@ -108,37 +108,37 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\adder_1bit.v" into library work
+Analyzing Verilog file "C:\Users\Young\Desktop\COD-P1\adder_1bit.v" into library work
 Parsing module <adder_1bit>.
-Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\adder_8bit.v" into library work
+Analyzing Verilog file "C:\Users\Young\Desktop\COD-P1\adder_8bit.v" into library work
 Parsing module <adder_8bits>.
-Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\adder_32bits.v" into library work
+Analyzing Verilog file "C:\Users\Young\Desktop\COD-P1\adder_32bits.v" into library work
 Parsing module <adder_32bits>.
-Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\SignalExt_32.v" into library work
+Analyzing Verilog file "C:\Users\Young\Desktop\COD-P1\SignalExt_32.v" into library work
 Parsing module <SignalExt_32>.
-Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\seven_seg_Dev_IO.v" into library work
+Analyzing Verilog file "C:\Users\Young\Desktop\COD-P1\seven_seg_Dev_IO.v" into library work
 Parsing module <seven_seg_Dev_IO>.
-Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\seven_seg_dev.v" into library work
+Analyzing Verilog file "C:\Users\Young\Desktop\COD-P1\seven_seg_dev.v" into library work
 Parsing module <seven_seg_dev>.
-Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\or_bit_32.v" into library work
+Analyzing Verilog file "C:\Users\Young\Desktop\COD-P1\or_bit_32.v" into library work
 Parsing module <or_bit_32>.
-Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\LED_DEV.v" into library work
+Analyzing Verilog file "C:\Users\Young\Desktop\COD-P1\LED_DEV.v" into library work
 Parsing module <LED_DEV>.
-Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\ipcore_dir\ROM_B.v" into library work
+Analyzing Verilog file "C:\Users\Young\Desktop\COD-P1\ipcore_dir\ROM_B.v" into library work
 Parsing module <ROM_B>.
-Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\ipcore_dir\RAM_B.v" into library work
+Analyzing Verilog file "C:\Users\Young\Desktop\COD-P1\ipcore_dir\RAM_B.v" into library work
 Parsing module <RAM_B>.
-Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2_32bit.v" into library work
+Analyzing Verilog file "C:\Users\Young\Desktop\COD-P1\Input_2_32bit.v" into library work
 Parsing module <Input_2_32bit>.
-Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\Ext_32.v" into library work
+Analyzing Verilog file "C:\Users\Young\Desktop\COD-P1\Ext_32.v" into library work
 Parsing module <Ext_32>.
-Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\clk_div.v" into library work
+Analyzing Verilog file "C:\Users\Young\Desktop\COD-P1\clk_div.v" into library work
 Parsing module <clk_div>.
-Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\Anti_jitter.v" into library work
+Analyzing Verilog file "C:\Users\Young\Desktop\COD-P1\Anti_jitter.v" into library work
 Parsing module <Anti_jitter>.
-Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\ALU_LCDF.v" into library work
+Analyzing Verilog file "C:\Users\Young\Desktop\COD-P1\ALU_LCDF.v" into library work
 Parsing module <ALU_LCDF>.
-Analyzing Verilog file "C:\Users\Young\Desktop\Verilog Project\COD-P1\Top.vf" into library work
+Analyzing Verilog file "C:\Users\Young\Desktop\COD-P1\Top.vf" into library work
 Parsing module <Top>.
 
 =========================================================================
@@ -152,24 +152,24 @@ Elaborating module <SignalExt_32>.
 Elaborating module <Ext_32>.
 
 Elaborating module <Input_2_32bit>.
-WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2_32bit.v" Line 37: Result of 32-bit expression is truncated to fit in 2-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2_32bit.v" Line 38: Result of 3-bit expression is truncated to fit in 2-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2_32bit.v" Line 59: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2_32bit.v" Line 63: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2_32bit.v" Line 67: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2_32bit.v" Line 71: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2_32bit.v" Line 75: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2_32bit.v" Line 79: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2_32bit.v" Line 83: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2_32bit.v" Line 87: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2_32bit.v" Line 97: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2_32bit.v" Line 101: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2_32bit.v" Line 105: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2_32bit.v" Line 109: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2_32bit.v" Line 113: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2_32bit.v" Line 117: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2_32bit.v" Line 121: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2_32bit.v" Line 125: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\COD-P1\Input_2_32bit.v" Line 37: Result of 32-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\COD-P1\Input_2_32bit.v" Line 38: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\COD-P1\Input_2_32bit.v" Line 59: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\COD-P1\Input_2_32bit.v" Line 63: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\COD-P1\Input_2_32bit.v" Line 67: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\COD-P1\Input_2_32bit.v" Line 71: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\COD-P1\Input_2_32bit.v" Line 75: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\COD-P1\Input_2_32bit.v" Line 79: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\COD-P1\Input_2_32bit.v" Line 83: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\COD-P1\Input_2_32bit.v" Line 87: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\COD-P1\Input_2_32bit.v" Line 97: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\COD-P1\Input_2_32bit.v" Line 101: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\COD-P1\Input_2_32bit.v" Line 105: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\COD-P1\Input_2_32bit.v" Line 109: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\COD-P1\Input_2_32bit.v" Line 113: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\COD-P1\Input_2_32bit.v" Line 117: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\COD-P1\Input_2_32bit.v" Line 121: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Young\Desktop\COD-P1\Input_2_32bit.v" Line 125: Result of 5-bit expression is truncated to fit in 4-bit target.
 
 Elaborating module <LED_DEV>.
 
@@ -180,13 +180,13 @@ Elaborating module <adder_32bits>.
 Elaborating module <adder_8bits>.
 
 Elaborating module <adder_1bit>.
-WARNING:HDLCompiler:189 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\ALU_LCDF.v" Line 36: Size mismatch in connection of port <ci>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Young\Desktop\COD-P1\ALU_LCDF.v" Line 36: Size mismatch in connection of port <ci>. Formal port size is 1-bit while actual signal size is 32-bit.
 
 Elaborating module <ROM_B>.
-WARNING:HDLCompiler:1499 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\ipcore_dir\ROM_B.v" Line 39: Empty module <ROM_B> remains a black box.
+WARNING:HDLCompiler:1499 - "C:\Users\Young\Desktop\COD-P1\ipcore_dir\ROM_B.v" Line 39: Empty module <ROM_B> remains a black box.
 
 Elaborating module <RAM_B>.
-WARNING:HDLCompiler:1499 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\ipcore_dir\RAM_B.v" Line 39: Empty module <RAM_B> remains a black box.
+WARNING:HDLCompiler:1499 - "C:\Users\Young\Desktop\COD-P1\ipcore_dir\RAM_B.v" Line 39: Empty module <RAM_B> remains a black box.
 
 Elaborating module <seven_seg_Dev_IO>.
 
@@ -203,38 +203,38 @@ Elaborating module <VCC>.
 Elaborating module <INV>.
 
 Elaborating module <or_bit_32>.
-WARNING:HDLCompiler:552 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Top.vf" Line 68: Input port clk is not connected on this instance
+WARNING:HDLCompiler:552 - "C:\Users\Young\Desktop\COD-P1\Top.vf" Line 68: Input port clk is not connected on this instance
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <Top>.
-    Related source file is "C:\Users\Young\Desktop\Verilog Project\COD-P1\Top.vf".
+    Related source file is "C:\Users\Young\Desktop\COD-P1\Top.vf".
 WARNING:Xst:2898 - Port 'clk', unconnected in block instance 'M6', is tied to GND.
 WARNING:Xst:2898 - Port 'EN', unconnected in block instance 'M6', is tied to GND.
 WARNING:Xst:2898 - Port 'rst', unconnected in block instance 'M6', is tied to GND.
-INFO:Xst:3210 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Top.vf" line 62: Output port <state> of the instance <M4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Top.vf" line 68: Output port <Other_out> of the instance <M6> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Young\Desktop\Verilog Project\COD-P1\Top.vf" line 123: Output port <button_pulse> of the instance <U9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Young\Desktop\COD-P1\Top.vf" line 62: Output port <state> of the instance <M4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Young\Desktop\COD-P1\Top.vf" line 68: Output port <Other_out> of the instance <M6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Young\Desktop\COD-P1\Top.vf" line 123: Output port <button_pulse> of the instance <U9> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <Top> synthesized.
 
 Synthesizing Unit <SignalExt_32>.
-    Related source file is "C:\Users\Young\Desktop\Verilog Project\COD-P1\SignalExt_32.v".
+    Related source file is "C:\Users\Young\Desktop\COD-P1\SignalExt_32.v".
     Summary:
 	no macro.
 Unit <SignalExt_32> synthesized.
 
 Synthesizing Unit <Ext_32>.
-    Related source file is "C:\Users\Young\Desktop\Verilog Project\COD-P1\Ext_32.v".
+    Related source file is "C:\Users\Young\Desktop\COD-P1\Ext_32.v".
     Summary:
 	no macro.
 Unit <Ext_32> synthesized.
 
 Synthesizing Unit <Input_2_32bit>.
-    Related source file is "C:\Users\Young\Desktop\Verilog Project\COD-P1\Input_2_32bit.v".
+    Related source file is "C:\Users\Young\Desktop\COD-P1\Input_2_32bit.v".
 WARNING:Xst:647 - Input <disp_ctr<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 32-bit register for signal <Ai>.
     Found 32-bit register for signal <Bi>.
@@ -271,7 +271,7 @@ WARNING:Xst:647 - Input <disp_ctr<0:0>> is never used. This port will be preserv
 Unit <Input_2_32bit> synthesized.
 
 Synthesizing Unit <LED_DEV>.
-    Related source file is "C:\Users\Young\Desktop\Verilog Project\COD-P1\LED_DEV.v".
+    Related source file is "C:\Users\Young\Desktop\COD-P1\LED_DEV.v".
 WARNING:Xst:647 - Input <Data_in<8:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <EN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -281,7 +281,7 @@ WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and lef
 Unit <LED_DEV> synthesized.
 
 Synthesizing Unit <ALU_LCDF>.
-    Related source file is "C:\Users\Young\Desktop\Verilog Project\COD-P1\ALU_LCDF.v".
+    Related source file is "C:\Users\Young\Desktop\COD-P1\ALU_LCDF.v".
     Found 32-bit shifter logical right for signal <Ai[31]_Bi[10]_shift_right_8_OUT> created at line 68
     Found 1-bit 7-to-1 multiplexer for signal <ALU_Ctr[2]_ALU_out[31]_wide_mux_9_OUT<31>> created at line 39.
     Found 1-bit 7-to-1 multiplexer for signal <ALU_Ctr[2]_ALU_out[31]_wide_mux_9_OUT<30>> created at line 39.
@@ -356,24 +356,24 @@ WARNING:Xst:737 - Found 1-bit latch for signal <ALU_out<31>>. Latches may be gen
 Unit <ALU_LCDF> synthesized.
 
 Synthesizing Unit <adder_32bits>.
-    Related source file is "C:\Users\Young\Desktop\Verilog Project\COD-P1\adder_32bits.v".
+    Related source file is "C:\Users\Young\Desktop\COD-P1\adder_32bits.v".
     Summary:
 	no macro.
 Unit <adder_32bits> synthesized.
 
 Synthesizing Unit <adder_8bits>.
-    Related source file is "C:\Users\Young\Desktop\Verilog Project\COD-P1\adder_8bit.v".
+    Related source file is "C:\Users\Young\Desktop\COD-P1\adder_8bit.v".
     Summary:
 	no macro.
 Unit <adder_8bits> synthesized.
 
 Synthesizing Unit <adder_1bit>.
-    Related source file is "C:\Users\Young\Desktop\Verilog Project\COD-P1\adder_1bit.v".
+    Related source file is "C:\Users\Young\Desktop\COD-P1\adder_1bit.v".
     Summary:
 Unit <adder_1bit> synthesized.
 
 Synthesizing Unit <seven_seg_Dev_IO>.
-    Related source file is "C:\Users\Young\Desktop\Verilog Project\COD-P1\seven_seg_Dev_IO.v".
+    Related source file is "C:\Users\Young\Desktop\COD-P1\seven_seg_Dev_IO.v".
 WARNING:Xst:647 - Input <blink_in<15:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <blink_in<31:20>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <point_in<15:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -388,7 +388,7 @@ WARNING:Xst:647 - Input <point_in<31:20>> is never used. This port will be prese
 Unit <seven_seg_Dev_IO> synthesized.
 
 Synthesizing Unit <seven_seg_dev>.
-    Related source file is "C:\Users\Young\Desktop\Verilog Project\COD-P1\seven_seg_dev.v".
+    Related source file is "C:\Users\Young\Desktop\COD-P1\seven_seg_dev.v".
     Found 8-bit 4-to-1 multiplexer for signal <temp_seg> created at line 47.
     Found 1-bit 4-to-1 multiplexer for signal <Dp> created at line 73.
     Found 1-bit 4-to-1 multiplexer for signal <digit<3>> created at line 85.
@@ -400,7 +400,7 @@ Synthesizing Unit <seven_seg_dev>.
 Unit <seven_seg_dev> synthesized.
 
 Synthesizing Unit <clk_div>.
-    Related source file is "C:\Users\Young\Desktop\Verilog Project\COD-P1\clk_div.v".
+    Related source file is "C:\Users\Young\Desktop\COD-P1\clk_div.v".
     Found 1-bit register for signal <Clk_CPU>.
     Found 32-bit register for signal <clkdiv>.
     Found 32-bit adder for signal <clkdiv[31]_GND_46_o_add_2_OUT> created at line 40.
@@ -411,7 +411,7 @@ Synthesizing Unit <clk_div>.
 Unit <clk_div> synthesized.
 
 Synthesizing Unit <Anti_jitter>.
-    Related source file is "C:\Users\Young\Desktop\Verilog Project\COD-P1\Anti_jitter.v".
+    Related source file is "C:\Users\Young\Desktop\COD-P1\Anti_jitter.v".
     Found 8-bit register for signal <sw_temp>.
     Found 32-bit register for signal <counter>.
     Found 1-bit register for signal <pluse>.
@@ -430,7 +430,7 @@ Synthesizing Unit <Anti_jitter>.
 Unit <Anti_jitter> synthesized.
 
 Synthesizing Unit <or_bit_32>.
-    Related source file is "C:\Users\Young\Desktop\Verilog Project\COD-P1\or_bit_32.v".
+    Related source file is "C:\Users\Young\Desktop\COD-P1\or_bit_32.v".
     Summary:
 	no macro.
 Unit <or_bit_32> synthesized.
@@ -1042,11 +1042,11 @@ clk_50mhz                      |    5.354|    3.079|    4.214|         |
 
 
 Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.89 secs
+Total CPU time to Xst completion: 9.22 secs
  
 --> 
 
-Total memory usage is 191032 kilobytes
+Total memory usage is 190648 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   97 (   0 filtered)
